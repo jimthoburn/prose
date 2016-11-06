@@ -1,0 +1,5 @@
+title: 'Sierra High School'
+collections:
+  staff:
+    title: 'Staff Members'
+    output: false
