@@ -1,7 +1,7 @@
 ---
 title: Building Cardboard Chairs
 date: 2016-11-06 05:45:00 Z
-photos:
+images:
 - "/uploads/cardboard-1.jpg"
 - "/uploads/cardboard-2.jpg"
 - "/uploads/cardboard-3.jpg"
