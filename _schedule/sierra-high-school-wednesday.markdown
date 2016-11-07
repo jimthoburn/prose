@@ -1,6 +1,6 @@
 ---
-title: Sierra High School (Wednesday)
-date: 2016-11-06 04:08:00 Z
+title: Wednesday
+date: 2016-11-05 21:08:00 -07:00
 position: 1
 Period 1: 8:00-8:46am
 Period 2: 8:49-9:34am
