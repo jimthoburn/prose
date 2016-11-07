@@ -1,6 +1,7 @@
 ---
 title: Introduction
 date: 2016-11-07 01:28:00 -08:00
+position: 0
 ---
 
 # Bringing Aspiration into Reality
