@@ -5,9 +5,6 @@ collections:
   about:
     title: About
     output: false
-  posts:
-    title: Announcements
-    output: true
   schedule:
     title: Bell Schedules
     output: false
@@ -28,6 +25,9 @@ collections:
     - start date: 2016-04-20 17:30:00.000000000 Z
       end date: 2016-04-20 19:30:00.000000000 Z
       title: Report Card Night
+  posts:
+    title: News & Announcements
+    output: true
   parents:
     title: Parents & Students
     output: false
