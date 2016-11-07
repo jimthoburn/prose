@@ -1,6 +1,7 @@
 ---
 title: Dress Code
-date: 2016-11-06 05:07:00 Z
+date: 2016-11-05 22:07:00 -07:00
+position: 0
 ---
 
 Students who do not dress in uniform must follow the district guidelines. The following items are not permitted for school attire:
