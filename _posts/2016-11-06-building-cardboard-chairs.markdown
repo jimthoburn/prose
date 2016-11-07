@@ -13,7 +13,6 @@ Photos:
 - "/uploads/cardboard-9.jpg"
 - "/uploads/cardboard-10.jpg"
 - "/uploads/cardboard-11.jpg"
-- 
 ---
 
 GATE students in Mrs. Stricklin's Exploring Art class created cardboard chairs and benches that could hold 150-200 pounds.  A contest was held at lunch time to determine the winner.  The judging criteria was visual appeal and overall strength.  Chair #3, with the word "bench" on it, was the winner.  The designers and creators won an In-n-Out lunch as a reward.
