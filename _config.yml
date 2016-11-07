@@ -1,5 +1,48 @@
-title: 'Sierra High School'
+---
+title: Sierra High School
+timezone: UTC
 collections:
-  staff:
-    title: 'Staff Members'
+  about:
+    title: About
     output: false
+  posts:
+    title: Announcements
+    output: true
+  schedule:
+    title: Bell Schedules
+    output: false
+  calendar:
+    title: Calendar
+    output: false
+    events:
+    - start date: 2016-11-09 00:00:00.000000000 Z
+      title: Final Exams for Periods 1, 3 and 5
+      note: school day ends at 12:15pm
+    - start date: 2016-11-21 00:00:00.000000000 Z
+      end date: 2016-11-25 00:00:00.000000000 Z
+      title: Thanksgiving Break
+      note: school closed
+    - start date: 2016-04-20 00:00:00.000000000 Z
+      title: Minimum Day
+      note: school day ends at 12:15pm
+    - start date: 2016-04-20 17:30:00.000000000 Z
+      end date: 2016-04-20 19:30:00.000000000 Z
+      title: Report Card Night
+  parents:
+    title: Parents & Students
+    output: false
+  staff:
+    title: Staff Members
+    output: false
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: staff
+  values:
+    title or subject taught: 
+    email: 
+    phone: 
+    photo: 

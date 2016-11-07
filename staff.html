@@ -1,10 +1,9 @@
 ---
-layout: default
 title: Staff at Sierra High School
-published: true
+permalink: "/staff"
+layout: default
 ---
 
-  <main>
     <h1>Staff</h1>
 
     <div class="staff-list">
@@ -12,17 +11,17 @@ published: true
       <section>
         <h2>Administration</h2>
         <ul>
-        {% assign staff_members = site.staff | where:'department', 'Administration' | sort:"name", "last" %}
+        {% assign staff_members = site.staff | where:'categories', 'Administration' | sort:"name", "last" %}
         {% for member in staff_members %}
           <li>
-            {% if member['photo_path'] %}
-              <img src="{{ member['photo_path'] }}" />
+            {% if member['photo'] %}
+              <img src="{{ member['photo'] }}" />
             {% endif %}
 
-            <h3>{{ member['name'] }}</h3>
+            <h3>{{ member['title'] }}</h3>
 
-            {% if member['position'] %}
-            <p class="title">{{ member['position'] }}</p>
+            {% if member['title or subject taught'] %}
+            <p class="title">{{ member['title or subject taught'] }}</p>
             {% endif %}
 
             {% if member['email'] %}
@@ -40,17 +39,17 @@ published: true
       <section id="teachers">
         <h2>Teachers</h2>
         <ul>
-        {% assign staff_members = site.staff | where:'department', 'Teachers' | sort:"name", "last" %}
+        {% assign staff_members = site.staff | where:'categories', 'Teachers' | sort:"name", "last" %}
         {% for member in staff_members %}
           <li>
-            {% if member['photo_path'] %}
-              <img src="{{ member['photo_path'] }}" />
+            {% if member['photo'] %}
+              <img src="{{ member['photo'] }}" />
             {% endif %}
 
-            <h3>{{ member['name'] }}</h3>
+            <h3>{{ member['title'] }}</h3>
 
-            {% if member['position'] %}
-            <p class="title">{{ member['position'] }}</p>
+            {% if member['title or subject taught'] %}
+            <p class="title">{{ member['title or subject taught'] }}</p>
             {% endif %}
 
             {% if member['email'] %}
@@ -69,22 +68,22 @@ published: true
         <h2><abbr title="Regional Occupational Program">ROP</abbr></h2>
         <ul>
           <li>
-            <img src="images/staff/IMG_0109.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+            <img src="/images/staff/IMG_0109.jpg" width="200" alt="TODO: Add Teacher’s Name" />
             <h3>Mr. Martin Arce</h3>
             <p class="title">Latino Studies</p>
           </li>
           <li>
-            <img src="images/staff/IMG_1103.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+            <img src="/images/staff/IMG_1103.jpg" width="200" alt="TODO: Add Teacher’s Name" />
             <h3>Mrs. Julienne Baldridge</h3>
             <p class="title">Child Development</p>
           </li>
           <li>
-            <img src="images/staff/IMG_1128.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+            <img src="/images/staff/IMG_1128.jpg" width="200" alt="TODO: Add Teacher’s Name" />
             <h3>Mrs. Pamela Lewis</h3>
             <p class="title">American Sign Language</p>
           </li>
           <li>
-            <img src="images/staff/IMG_0109.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+            <img src="/images/staff/IMG_0109.jpg" width="200" alt="TODO: Add Teacher’s Name" />
             <h3>Mr. Abel Torres</h3>
             <p class="title">Criminal Justice/Forensics</p>
           </li>
@@ -94,17 +93,17 @@ published: true
       <section>
         <h2>S.O.A.R. Academy</h2>
         <ul>
-        {% assign staff_members = site.staff | where:'department', 'S.O.A.R. Academy' | sort:"name", "last" %}
+        {% assign staff_members = site.staff | where:'categories', 'S.O.A.R. Academy' | sort:"name", "last" %}
         {% for member in staff_members %}
           <li>
-            {% if member['photo_path'] %}
-              <img src="{{ member['photo_path'] }}" />
+            {% if member['photo'] %}
+              <img src="{{ member['photo'] }}" />
             {% endif %}
 
-            <h3>{{ member['name'] }}</h3>
+            <h3>{{ member['title'] }}</h3>
 
-            {% if member['position'] %}
-            <p class="title">{{ member['position'] }}</p>
+            {% if member['title or subject taught'] %}
+            <p class="title">{{ member['title or subject taught'] }}</p>
             {% endif %}
 
             {% if member['email'] %}
@@ -123,7 +122,7 @@ published: true
         <h2>Counselor</h2>
         <ul>
           <li>
-            <img src="images/staff/IMG_1119.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+            <img src="/images/staff/IMG_1119.jpg" width="200" alt="TODO: Add Teacher’s Name" />
             <h3>Ms. Sandra Weyant</h3>
             <p>(626) 852-8383</p>
           </li>
@@ -134,7 +133,7 @@ published: true
         <h2>CCAT Program</h2>
         <ul>
           <li>
-            <img src="images/staff/IMG_1194.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+            <img src="/images/staff/IMG_1194.jpg" width="200" alt="TODO: Add Teacher’s Name" />
             <h3>Ms. Denise Carr</h3>
             <p>(626) 852-8328</p>
           </li>
@@ -142,5 +141,3 @@ published: true
       </section>
 
     </div><!-- /.staff-list -->
-
-  </main>

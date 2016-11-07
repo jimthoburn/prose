@@ -1,9 +1,9 @@
 ---
-name: Mrs. Shirley D’Avis
-department: Teachers
-position: 'English, Yearbook & Leadership'
-email:
-photo_path: images/staff/IMG_0064.jpg
+title: Mrs. Shirley D’Avis
+categories:
+- Teachers
+title or subject taught: English, Yearbook & Leadership
+email: 
+photo: images/staff/IMG_0064.jpg
 ---
-
 

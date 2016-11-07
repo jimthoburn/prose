@@ -1,8 +1,10 @@
 ---
-name: Mr. Paul Hernandez
-department: Administration
-position: Principal
+title: Mr. Paul Hernandez
+categories:
+- Administration
+title or subject taught: Principal
 email: phernandez@azusa.org
-phone: (626) 852-8300
-photo_path: images/staff/IMG_0149.jpg
+phone: "(626) 852-8300"
+photo: images/staff/IMG_0149.jpg
 ---
+

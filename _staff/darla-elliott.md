@@ -1,9 +1,9 @@
 ---
-name: Ms. Darla Elliott
-department: Teachers
-position: English
-email:
-photo_path: images/staff/IMG_0102.jpg
+title: Ms. Darla Elliott
+categories:
+- Teachers
+title or subject taught: English
+email: 
+photo: images/staff/IMG_0102.jpg
 ---
-
 

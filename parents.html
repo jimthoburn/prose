@@ -1,21 +1,27 @@
 ---
-layout: default
 title: Parents, Sierra High School
+permalink: "/parents"
+layout: default
 ---
 
-  <main>
-    <img src="images/photos/caligraphy.jpg" alt="Caligraphy" />
+    <img src="/images/photos/caligraphy.jpg" alt="Caligraphy" />
 
     <h1>Parents &amp; Students</h1>
 
-    <p>Sierra High School is an alternative education program that provides a personalized, enriched, and varied environment that enables students to develop to their full potential. With collaboration of a caring staff and support of their family and community, students will graduate with a strong vision for a successful future.</p>
-
     <div class="parents">
+
+    {% for item in site.parents %}
+      <section id="{{ item.name }}">
+        <h2>{{ item.title }}</h2>
+        {{ item.content | markdownify }}
+      </section>
+    {% endfor %}
+
       <section>
         <h2>Popular Pages</h2>
         <ul>
-          <li><a href="academics.html">Courses</a></li>
-          <li><a href="schedule.html">Bell Schedule</a></li>
+          <li><a href="/academics">Courses</a></li>
+          <li><a href="/schedule">Bell Schedule</a></li>
           <li><a href="">Azusa PD Safety Tips (English)</a></li>
           <li><a href="">Azusa PD Safety Tips (Spanish)</a></li>
           <li><a href="">School Plan</a></li>
@@ -127,21 +133,7 @@ title: Parents, Sierra High School
       <section id="dress-code">
         <h2>Dress Code</h2>
 
-        <p>Students who do not dress in uniform must follow the district guidelines. The following items are not permitted for school attire:</p>
-
-        <ol>
-          <li>Clothing that indicates an affiliation with a gang or intimidating group</li>
-          <li>Caps, hats, bandannas, hairnets or visors</li>
-          <li>Oversized pants that fall below the waist</li>
-          <li>Baggy shorts with knee socks</li>
-          <li>Belts with lettering or longer than waist appropriate</li>
-          <li>Halter tops, tank tops, bare midriffs, see-through or fish net clothing</li>
-          <li>Clothing that does not conceal undergarments at all times</li>
-          <li>Skirts or shorts shorter than mid-thigh</li>
-          <li>Clothing that suggests obscene pictures, wording, and/or drugs, alcohol, smoking, sex or violence</li>
-          <li>Frayed or unfinished hems</li>
-          <li>Thongs, thong-like sandals, steel-toed shoes or sandals without a back strap</li>
-        </ol>
+        {{ site.information['Dress Code'] | markdownify }}
       </section>
 
     </div><!-- /.parents -->
@@ -150,5 +142,3 @@ title: Parents, Sierra High School
     <p><a href="http://www.azusa.org/portal/">AERIES Parent/Student portal</a> is now available! Students were given their log-in information during their 4th period class. Parent letters were sent home on Friday, October 4th. 
     You can now stay up-to-date with important school information. You can see your student’s grades, classes, attendance and a lot of useful information on AERIES, our new student information system.</p>
     <p>To get started, read the <a href="http://www.azusa.org/MIS/AeriesHelp/StudentAndParentPortalGuide.pdf">Easy to follow directions</a> and then <a href="http://www.azusa.org/portal/">visit the portal</a>.</p>
-
-  </main>

@@ -1,109 +1,149 @@
-<!doctype html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Web Prototype / Sierra High School</title>
-  <style type="text/css">
-    html, body, #outer-outer-container, #outer-container {
-      height: 100%;
-      min-height: 100%;
-    }
-    body {
-      font: 125%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-      margin: 0;
-      background: rgb(244, 245, 244);
-      color: rgb(0, 1, 0); /* @text-color */
-    }
-    header h1 {
-      margin-bottom: 0;
-    }
-    header h1 a,
-    header h1 a:visited {
-      color: inherit;
-    }
-    header h2 {
-      margin-top: 0;
-      font-style: normal;
-      color: #999;
-    }
-    a[href] {
-      color: rgb(110, 160, 26); /* @link-color */
-      text-decoration: none;
-    }
-    a[href]:hover,
-    a[href]:active,
-    a[href]:focus {
-      text-decoration: underline;
-    }
-    a[href]:visited {
-      color: #333;
-    }
-    ul, li {
-      margin-left: 0;
-      padding-left: 0;
-    }
-    h3 {
-      margin-bottom: 0;
-    }
-    ul {
-      margin-top: 0.5em;
-      padding-left: 0.5em;
-    }
-    #container {
-      margin: 50px auto;
-    }
-    #outer-outer-container {
-      margin: 0 auto;
-      display: table;
-      padding: 2em;
-    }
-    #outer-container {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 0 auto;
-    }
-    #container > section > section {
-      float: left;
-      margin-right: 3em;
-    }
-    li {
-      color: #bbb;
-    }
-    .new a {
-      color: #a93c44;
-    }
-  </style>
-</head>
-<body>
-  <div id="outer-outer-container">
-    <div id="outer-container">
-      <div id="container">
+---
+title: Sierra High School
+permalink: "/"
+layout: default
+classname: home
+---
 
-        <header>
-          <h1>Sierra High School</h1>
-          <h2>Web Prototype</h2>
-        </header>
+    <div class="introduction">
+      <img src="/images/students/IMG_0760.jpg" width="500" alt="" />
+      <div>
+        <h1>Bringing aspiration into reality</h1>
 
-        <section>
-          <section>
-            <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="academics.html">Courses</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="staff.html">Staff</a></li>
-              <li><a href="news.html">News</a></li>
-              <li><a href="pbis.html"><abbr title="Positive Behavioral Intervention & Supports">PBIS</abbr></a></li>
-              <li><a href="calendar.html">Calendar</a></li>
-              <li><a href="schedule.html">Bell Schedule</a></li>
-              <li><a href="parents.html">Parents &amp; Students</a></li>
-              <li><a href="404.html">Page Not Found (404)</a></li>
-            </ul>
-          </section>
-        </section>
+        <p>Sierra High School is a place where students have a second opportunity to achieve academic success. To bring this aspiration into reality we:</p>
 
+        <ul>
+          <li>model and build good relationships</li>
+          <li>develop skills and knowledge</li>
+          <li>foster independent thinking in a safe environment</li>
+        </ul>
+        <p>Learn more <a href="/about">about our school</a></p>
       </div>
     </div>
-  </div>
-</body>
-</html>
+    <script>
+    (function() {
+      var images = [
+        'images/students/IMG_0284.jpg',
+        'images/students/IMG_0325.jpg',
+        'images/students/IMG_0381.jpg',
+        'images/students/IMG_0482.jpg',
+        'images/students/IMG_0614.jpg',
+        'images/students/IMG_0683.jpg',
+        'images/students/IMG_0731.jpg',
+        'images/students/IMG_0760.jpg',
+        'images/students/IMG_1065.jpg'
+      ];
+      var min = 0;
+      var max = images.length - 1;
+      var random = Math.floor(Math.random() * (max - min + 1) + min);
+      var image = document.querySelector('.introduction img');
+      image.src = images[random];
+      if (images[random].indexOf('IMG_0284.jpg') >= 0 ||
+          images[random].indexOf('IMG_0381.jpg') >= 0 ||
+          images[random].indexOf('IMG_0482.jpg') >= 0 ||
+          images[random].indexOf('IMG_0614.jpg') >= 0 ||
+          images[random].indexOf('IMG_1065.jpg') >= 0) {
+        image.parentNode.className += ' reverse';
+      }
+    })();
+    </script>
+
+    <div class="staff-list">
+      <h2>Our teachers</h2>
+      <ul>
+        <li>
+          <img src="/images/staff/IMG_0218.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+          <h3>Mr. Charlie Callison</h3>
+          <p class="title">Biology</p>
+        </li>
+        <li>
+          <img src="/images/staff/IMG_0064.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+          <h3>Mrs. Shirley D’Avis</h3>
+          <p class="title">English, Yearbook &amp; Leadership</p>
+        </li>
+        <li>
+          <img src="/images/staff/IMG_0102.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+          <h3>Ms. Darla Elliott</h3>
+          <p class="title">English</p>
+        </li>
+        <li>
+          <img src="/images/staff/IMG_0119.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+          <h3>Ms. Barbara Klaus</h3>
+          <p class="title">Science &amp; Math</p>
+        </li>
+      </ul>
+      <p>See more <a href="/staff">staff members</a></p>
+    </div>
+
+    <div class="summaries">
+      <div class="parents-summary">
+        <h2>Parents &amp; students</h2>
+        <p>Learn about attendance, handbooks, dress code and more on the <a href="/parents">parents &amp; students</a> page</a>.</p>
+      </div>
+
+      <div class="calendar-summary">
+        <h2>Calendar</h2>
+        <dl>
+          <dt>November 9</dt><dd>Final Exams for Periods 1, 3 and 5<br /><em>school day ends at 12:15pm</em></dd>
+          <dt>November 11</dt><dd>Veterans Day<br /><em>school closed</em></dd>
+          <dt>November 14</dt><dd>Second Trimester Begins</dd>
+        </dl>
+        <p><a href="/calendar">See full calendar</a></p>
+      </div>
+    </div>
+
+    <!--
+    <div class="summaries">
+      <div class="parents-summary">
+        <h2>Facilities</h2>
+        <ul>
+          <li>Gym</li>
+          <li>Multi-sport athletic field</li>
+          <li>Computer lab</li>
+          <li>Multiple computer carts</li>
+          <li>Art room with Kiln for firing ceramics</li>
+          <li>Parent Center</li>
+        </ul>
+      </div>
+
+      <div class="calendar-summary">
+        <h2>Awards</h2>
+        <ul>
+          <li><a href="http://www.acswasc.org">WASC</a> accreditation</li>
+          <li>Model Continuation School</li>
+      </div>
+    </div>
+    -->
+
+    <div class="feature">
+      <h2>News &amp; Announcements</h2>
+      <!--
+      <p class="more">See more <a href="/news">news &amp; announcements</a></p>
+      -->
+
+      <a href="/news#rotary-speech-contest">
+        <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL3Nocy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDY3OC8xNDUyMzI4MTYzNTgyLzE0NTU0Mzk4ODcwNDguanBlZz9jcm9wVG9wPTM3JmNyb3BSaWdodD05NTAmY3JvcEJvdHRvbT03MTImY3JvcExlZnQ9NTAmYmFzaXNXaWR0aD0xMDAw" alt="Rotary Speech Contest Winners" />
+        <p>Congratulations to Sierra High School's Violet Vargas for her Third Place Finish in The Rotary Club’s speech contest…</p>
+      </a>
+    </div>
+
+    <ul class="news-summary">
+      <li>
+        <a href="/news#cardboard">
+          <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL3Nocy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDY3OC8xNDUyMzI4MTYzNTgyLzE0NTU0Mzk4OTYzNjEuanBnP2Nyb3BUb3A9MzcmY3JvcFJpZ2h0PTk1MCZjcm9wQm90dG9tPTcxMiZjcm9wTGVmdD00OSZiYXNpc1dpZHRoPTEwMDA=" alt="Building Cardboard Chairs" />
+          <span>Building Cardboard Chairs</span>
+        </a>
+      </li>
+      <li>
+        <a href="/news#art">
+          <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL3Nocy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDY3OC8xNDUyMzI4MTYzNTgyLzE0NTU0Mzk3Njk1NDkuanBnP2Nyb3BUb3A9MzcmY3JvcFJpZ2h0PTk1MCZjcm9wQm90dG9tPTcxMiZjcm9wTGVmdD00OSZiYXNpc1dpZHRoPTEwMDA=" alt="Installation Art at the Grocery Store" />
+          <span>Installation Art at the Grocery Store</span>
+        </a>
+      </li>
+      <li>
+        <a href="/news#rbuck">
+          <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL3Nocy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDY3OC8xNDUyMzI4MTYzNTgyLzE0NTU0MzkzODk5MjMuanBlZz9jcm9wVG9wPTM3JmNyb3BSaWdodD05NTAmY3JvcEJvdHRvbT03MTImY3JvcExlZnQ9NTAmYmFzaXNXaWR0aD0xMDAw" alt="PBIS R-Buck exchange" />
+          <span>PBIS R-Buck exchange</span>
+        </a>
+      </li>
+    </ul>
