@@ -51,4 +51,4 @@ defaults:
     type: post
   values:
     permalink: "/:categories/:year/:month/:day/:title"
-    photos: 
+    images: 
