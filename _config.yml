@@ -28,6 +28,9 @@ collections:
     - start date: 2016-04-20 17:30:00.000000000 Z
       end date: 2016-04-20 19:30:00.000000000 Z
       title: Report Card Night
+  home:
+    title: Home
+    output: true
   parents:
     title: Parents & Students
     output: false
