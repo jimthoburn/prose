@@ -50,4 +50,4 @@ defaults:
     path: ''
     type: post
   values:
-    permalink: /:categories/:year/:month/:day/:title
+    permalink: "/:categories/:year/:month/:day/:title"
