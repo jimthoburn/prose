@@ -46,3 +46,8 @@ defaults:
     email: 
     phone: 
     photo: 
+- scope:
+    path: ''
+    type: post
+  values:
+    permalink: /:categories/:year/:month/:day/:title
