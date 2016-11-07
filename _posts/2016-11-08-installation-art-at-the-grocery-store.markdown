@@ -1,6 +1,6 @@
 ---
 title: Installation Art at the Grocery Store
-date: 2016-11-07 05:43:00 Z
+date: 2016-11-08 05:43:00 Z
 images:
 - "/uploads/grocery-store-1.jpg"
 - "/uploads/grocery-store-2.jpg"
