@@ -30,7 +30,7 @@ collections:
       title: Report Card Night
   home:
     title: Home
-    output: true
+    output: false
   parents:
     title: Parents & Students
     output: false
