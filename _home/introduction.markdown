@@ -6,7 +6,7 @@ position: 0
 
 # Bringing Aspiration into Reality
 
-Sierra High School is a place where students have a second opportunity to achieve academic success. To bring this aspiration into reality we:
+**Sierra High School** is a place where students have a second opportunity to achieve academic success. To bring this aspiration into reality we:
 
 * model and build good relationships
 
