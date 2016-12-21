@@ -7,4 +7,4 @@ date: 2016-11-05 22:11:00 -07:00
 
 Central to the school’s philosophy is the belief that provided a personalized, caring, and enriched environment students will develop to their fullest potential.  The ultimate goal of Sierra High School is to develop a person who is willing to accept and display the responsibilities of good citizenship and to perform satisfactorily as a contributing member of our society.
 
-We’re also [a model school](http://sierrahighschool.jimthoburn.com/a-model-school.html).
+We’re also [a model school](/a-model-school/).
