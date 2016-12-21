@@ -1,6 +1,6 @@
 ---
 title: Your Filename
-date: {}
+date: '2016-12-21 11:30:00 +0800'
 published: true
 ---
 
