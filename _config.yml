@@ -1,6 +1,7 @@
 ---
 title: Sierra High School
 timezone: America/Los_Angeles
+baseurl: ""
 collections:
   about:
     title: About
