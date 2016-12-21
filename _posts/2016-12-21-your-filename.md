@@ -8,4 +8,4 @@ published: false
 
 Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
 
-![Basketball]({{site.baseurl}}/_posts/basketball.jpg)![basketball.jpg]({{site.baseurl}}/_posts/basketball.jpg)
+![Basketball]({{site.baseurl}}/_posts/basketball.jpg)
