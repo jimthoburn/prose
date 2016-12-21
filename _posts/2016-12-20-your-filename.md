@@ -1,7 +1,6 @@
 ---
 title: Your Filename
-date: '2016-12-21 11:30:00 +0800'
-published: true
+date: 2016-12-20 19:30:00 -08:00
 ---
 
 ## A New Post
