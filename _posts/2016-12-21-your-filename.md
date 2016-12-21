@@ -1,7 +1,7 @@
 ---
 title: Your Filename
 date: {}
-published: false
+published: true
 ---
 
 ## A New Post
