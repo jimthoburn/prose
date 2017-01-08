@@ -55,5 +55,5 @@ defaults:
   values:
     permalink: "/:categories/:year/:month/:day/:title"
     images: 
-baseurl: ''
+baseurl: 
 permalink: pretty
