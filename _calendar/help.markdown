@@ -1,6 +1,6 @@
 ---
 title: Read Me (Calendar Help)
-date: 2016-11-06 07:48:00 Z
+date: 2016-11-06 00:48:00 -07:00
 published: false
 position: 0
 ---

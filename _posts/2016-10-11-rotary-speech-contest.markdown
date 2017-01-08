@@ -1,6 +1,6 @@
 ---
 title: Rotary Speech Contest
-date: 2016-10-12 04:22:00 Z
+date: 2016-10-11 21:22:00 -07:00
 images:
 - "/uploads/rotary-1.jpg"
 - "/uploads/rotary-2.jpg"
