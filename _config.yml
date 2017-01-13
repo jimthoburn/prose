@@ -51,9 +51,8 @@ defaults:
     photo: 
 - scope:
     path: ''
-    type: post
+    type: posts
   values:
     permalink: "/:categories/:year/:month/:day/:title"
     images: 
-baseurl: 
 permalink: pretty

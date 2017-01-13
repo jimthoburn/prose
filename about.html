@@ -9,73 +9,39 @@ classname: about
 
     <h1>About Our School</h1>
 
-    <div class="text">
-      {{ site.about }}
-    </div>
-
-    <div class="staff-list">
-      <h2>Our teachers</h2>
-      <p>See more <a href="/staff">staff members</a></p>
-      <ul>
-        <li>
-          <img src="/images/staff/IMG_0218.jpg" width="200" alt="TODO: Add Teacher’s Name" />
-          <h3>Mr. Charlie Callison</h3>
-          <p class="title">Biology</p>
-        </li>
-        <li>
-          <img src="/images/staff/IMG_0064.jpg" width="200" alt="TODO: Add Teacher’s Name" />
-          <h3>Mrs. Shirley D’Avis</h3>
-          <p class="title">English, Yearbook &amp; Leadership</p>
-        </li>
-        <li>
-          <img src="/images/staff/IMG_0102.jpg" width="200" alt="TODO: Add Teacher’s Name" />
-          <h3>Ms. Darla Elliott</h3>
-          <p class="title">English</p>
-        </li>
-        <li>
-          <img src="/images/staff/IMG_0119.jpg" width="200" alt="TODO: Add Teacher’s Name" />
-          <h3>Ms. Barbara Klaus</h3>
-          <p class="title">Science &amp; Math</p>
-        </li>
-      </ul>
-    </div>
-
-    <div class="principals-message">
-
-      <div>
-        <div>
-          {{ site.content['principals-message'] | markdownify }}
-          <h2>Principal’s Message</h2>
-          <p>I am honored and excited to be serving as Principal of Sierra High School.  Sierra High School serves the needs of our students by offering proven and effective alternative programs including: a six-period day for continuation high school students, The Underdog Mural program, a competitive sports league, and  the Student Opportunity for Academic Recovery program (S.O.A.R.).  We are proud of our diverse programs and commitment to preparing students for work or college.  Our highest priorities are to improve reading, writing, and mathematics skills.  Please feel free to <a href="mailto:phernandez@azusa.org">email me</a> or stop by at your convenience.</p>
+    {% for post in site.about %}
+      {% if post.slug == 'introduction' %}
+        <div class="text">
+        {{ post.content }}
         </div>
+      {% endif %}
+    {% endfor %}
 
-        <p class="signature">
-          <img src="/images/signature.svg" width="150" alt="" /><br />
-          <strong>Paul Hernandez,</strong><br />
-          Principal Sierra High School
-        </p>
-      </div>
+    {% include staff-summary.html %}
 
-    </div>
+    {% for post in site.about %}
+      {% if post.slug == 'principal' %}
+        <div class="principals-message">
+
+          <div>
+            <h2>{{ post.title }}</h2>
+            {{ post.content }}
+          </div>
+
+        </div>
+      {% endif %}
+    {% endfor %}
 
     <h2>News &amp; Announcements</h2>
     <ul class="news-summary">
+    {% for post in site.posts limit:3 %}
       <li>
-        <a href="/news#cardboard">
-          <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL3Nocy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDY3OC8xNDUyMzI4MTYzNTgyLzE0NTU0Mzk4OTYzNjEuanBnP2Nyb3BUb3A9MzcmY3JvcFJpZ2h0PTk1MCZjcm9wQm90dG9tPTcxMiZjcm9wTGVmdD00OSZiYXNpc1dpZHRoPTEwMDA=" alt="Building Cardboard Chairs" />
-          <span>Building Cardboard Chairs</span>
+        <a href="/news#{{ post.slug }}">
+          {% for image in post.images limit:1 %}
+            <img src="{{ image }}" width="500" alt="" />
+          {% endfor %}
+          <span>{{ post.title }}</span>
         </a>
       </li>
-      <li>
-        <a href="/news#art">
-          <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL3Nocy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDY3OC8xNDUyMzI4MTYzNTgyLzE0NTU0Mzk3Njk1NDkuanBnP2Nyb3BUb3A9MzcmY3JvcFJpZ2h0PTk1MCZjcm9wQm90dG9tPTcxMiZjcm9wTGVmdD00OSZiYXNpc1dpZHRoPTEwMDA=" alt="Installation Art at the Grocery Store" />
-          <span>Installation Art at the Grocery Store</span>
-        </a>
-      </li>
-      <li>
-        <a href="/news#rbuck">
-          <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL3Nocy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDY3OC8xNDUyMzI4MTYzNTgyLzE0NTU0MzkzODk5MjMuanBlZz9jcm9wVG9wPTM3JmNyb3BSaWdodD05NTAmY3JvcEJvdHRvbT03MTImY3JvcExlZnQ9NTAmYmFzaXNXaWR0aD0xMDAw" alt="PBIS R-Buck exchange" />
-          <span>PBIS R-Buck exchange</span>
-        </a>
-      </li>
+    {% endfor %}
     </ul>

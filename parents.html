@@ -10,8 +10,9 @@ layout: default
 
     <div class="parents">
 
+    {% assign sorted_parents = site.parents | sort:"position" %}
     {% for item in site.parents %}
-      <section id="{{ item.name }}">
+      <section id="{{ item.id | replace: "/parents/", "" }}">
         <h2>{{ item.title }}</h2>
         {{ item.content | markdownify }}
       </section>
@@ -45,18 +46,6 @@ layout: default
 
           <li><a href="">WASC Self-Study</a></li>
         </ul>
-      </section>
-
-      <section id="activities">
-        <h2>Activities</h2>
-
-        <p>Sierra High offers several activities for students to enhance their skills. The Leadership Class is responsible for assisting student advisors in setting up school activities. Applications may be turned in to the advisors in early September. The Yearbook Class prepares the annual yearbook for the school.</p>
-      </section>
-
-      <section id="attendance">
-        <h2>Attendance</h2>
-
-        <p>Sierra students are required to be on time daily, and to remain for the full day. Since most students are behind in credits, regular attendance becomes very important in order to make up lost credits. Illness, medical appointments and the funeral of an immediate family member are the only reasons for excused absence.</p>
       </section>
 
       <section id="credits">
@@ -128,12 +117,6 @@ layout: default
             </tr>
           </tfoot>
         </table>
-      </section>
-
-      <section id="dress-code">
-        <h2>Dress Code</h2>
-
-        {{ site.information['Dress Code'] | markdownify }}
       </section>
 
     </div><!-- /.parents -->
