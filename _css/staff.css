@@ -1,0 +1,122 @@
+
+  /* =Staff
+  ----------------------------------------------- */
+
+  .home .staff-list {
+    padding-bottom: 1.5em;
+  }
+  .home .staff-list > p:last-child {
+    text-align: center;
+    max-width: none;
+  }
+  @media (min-width: 60em) {
+    .home .staff-list {
+      position: relative;
+    }
+    .home .staff-list > p:last-child {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  .staff-list ul,
+  .staff-list li {
+    /* @reset-list */
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .staff-list ul {
+    max-width: none;
+    font-size: 0.8181818182em; /* 18px / 22px */
+    line-height: 1.2222222222; /* 22px / 18px */
+    margin-left: -1.5em; /* item padding */
+    margin-right: -1.5em;
+
+    /* @flex-box-wrap */
+    display: -webkit-flex;
+    display:         flex;
+
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .staff-list li {
+    color: rgb(41, 53, 57);
+    width: 100%;
+    padding: 1.5em;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .staff-list li > a {
+    color: inherit;
+    font-style: inherit;
+    text-decoration: inherit;
+  }
+  .staff-list li img {
+    border-radius: 50%;
+  }
+
+  /* SHIM: This is prefixed with “main” so IE8 will ignore it (since it doesn’t understand HTML5 elements) */
+  main .staff-list img {
+
+    /* Make images shrink or grow to fit the available space */
+    width: 100%;
+    height: auto;
+
+    /* But don’t let them get too large (for the case where there’s only one column) */
+    /*
+    max-width: 15em;
+    */
+  }
+
+  .staff-list li h3,
+  .staff-list li p {
+    max-width: none;
+  }
+  .staff-list li h3 {
+    margin: 0.75em 0 0 0;
+    font-family: inherit;
+  }
+  .staff-list li p.title {
+    font-style: italic;
+    opacity: 0.6;
+    margin: 0;
+  }
+  .staff-list li p {
+  }
+
+  @media (min-width: 20em) {
+    .staff-list li {
+      width: 50%;
+    }
+  }
+  @media (min-width: 40em) {
+    .staff-list li {
+      width: 33.333%;
+    }
+  }
+  @media (min-width: 60em) {
+    .staff-list li {
+      width: 25%;
+    }
+  }
+
+  .staff-list h3 {
+    font-size: inherit;
+  }
+
+  /*
+  @media (min-width: 82.5em) {
+    h1 + .staff-list h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+      float: left;
+      width: calc(50% - 8em);
+      width: 25%;
+    }
+    h1 + .staff-list ul {
+      margin-left: calc(50% - 14em);
+      margin-left: 30%;
+    }
+  }
+  */

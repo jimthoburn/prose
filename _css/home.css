@@ -1,0 +1,338 @@
+
+  /* =Home
+  ----------------------------------------------- */
+  /*
+  .home header {
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    z-index: 1;
+    padding-left: 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .home main {
+    padding-bottom: 0;
+  }
+  */
+  .home main .staff-list {
+    margin-top: calc(var(--line-height) * 2);
+  }
+  .summaries {
+    margin-top: calc(var(--line-height) * 2);
+    margin-left: calc(var(--line-height) * -1);
+    margin-right: calc(var(--line-height) * -1);
+  }
+  @media (min-width: 60em) { /* --big-screen-width */
+    .summaries {
+      margin-left: calc(var(--line-height) * -2);
+      margin-right: calc(var(--line-height) * -2);
+    }
+  }
+  .summaries div {
+    padding: 3em 1.5em;
+    background-color: rgb(222, 222, 222); /* @silver */
+  }
+  @media (min-width: 140em) {
+    .summaries {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .summaries div {
+      flex-grow: 1;
+    }
+  }
+  @media (min-width: 180em) {
+    .summaries {
+      flex-wrap: nowrap;
+    }
+    .summaries div {
+      flex-basis: 25%;
+    }
+    .summaries .calendar-summary {
+      flex-basis: 50%;
+    }
+  }
+  .summaries .facilities-summary {
+    background-color: white;
+  }
+  .summaries .parents-summary {
+    background-color: rgb(238, 238, 238); /* @seashell */
+  }
+  .summaries div h2,
+  .parents-summary h2,
+  .news-summary-home h2 {
+    margin: 0;
+  }
+  .news-summary-more {
+    background: black;
+    color: white;
+    margin: 0 0 -3em 0;
+    padding: 3em;
+    max-width: none;
+  }
+  .news-summary-more a {
+    color: inherit;
+  }
+  .news-summary {
+    max-width: none;
+  }
+
+  .news-summary li {
+    position: relative;
+    background: black;
+    color: white;
+  }
+
+  .news-summary li::before {
+    content: "";
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .news-summary li span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5em;
+  }
+  @media (min-width: 60em) {
+    .news-summary li span {
+      padding: 3em;
+    }
+  }
+  .news-summary li a::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.2s;
+  }
+  .news-summary li a:hover::before,
+  .news-summary li a:active::before,
+  .news-summary li a:focus::before {
+    background-color: transparent;
+  }
+  .news-summary li a {
+    color: white;
+  }
+  .calendar-summary p {
+    text-align: right;
+    margin-bottom: 0;
+  }
+  .feature h2 {
+    margin: 0;
+    padding: 1.5em;
+    font-family: inherit;
+    text-transform: inherit;
+    color: inherit;
+
+    /* For the instagram username */
+    /* @wrap-long-words */
+    word-wrap     : break-word;
+    overflow-wrap : break-word;
+  }
+  .feature h2 svg {
+    vertical-align: middle;
+    margin-right: calc(var(--line-height) / 4);
+  }
+  .feature .more {
+    margin: 0;
+    padding: 0 3em 3em;
+    max-width: none;
+  }
+  .feature {
+    position: relative;
+  }
+  .feature h2 {
+    position: absolute;
+  }
+  .feature h2 svg {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  @media (max-width: 39.9em) {
+    .feature h2 {
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+  .feature .more {
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+
+  }
+  @media (min-width: 60em) {
+    .summaries div,
+    .parents-summary,
+    .news-summary-home {
+       padding-left: 3em;
+       padding-right: 3em;
+    }
+  }
+  .feature {
+    position: relative;
+    background: black;
+    color: white;
+  }
+  .feature::before {
+    content: "";
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .feature img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .feature img + p {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    padding: 1.5em;
+  }
+  @media (min-width: 60em) {
+    .feature img + p {
+      padding: 3em;
+    }
+  }
+  .feature a {
+    color: inherit;
+    display: block;
+  }
+  .news-summary,
+  .news-summary li {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .feature {
+    margin-left: calc(var(--line-height) * -1);
+    margin-right: calc(var(--line-height) * -1);
+  }
+  .news-summary:last-child {
+    margin-left: calc(var(--line-height) * -1);
+    margin-right: calc(var(--line-height) * -1);
+    margin-bottom: calc(var(--line-height) * -2);
+    max-width: none;
+  }
+  @media (min-width: 60em) { /* --big-screen-width */
+    .feature {
+      margin-left: calc(var(--line-height) * -2);
+      margin-right: calc(var(--line-height) * -2);
+    }
+    .news-summary:last-child {
+      margin-left: calc(var(--line-height) * -2);
+      margin-right: calc(var(--line-height) * -2);
+      margin-bottom: calc(var(--line-height) * -4);
+    }
+  }
+
+  .principals-message {
+    background-color: rgb(222, 222, 222); /* @silver */
+    background-color: rgb(238, 238, 238); /* @seashell */
+  }
+  .principals-message a {
+    color: inherit;
+  }
+  .principals-message > div {
+    padding: 3em 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40em;
+  }
+  .news-summary {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  @media (min-width: 60em) {
+    .news-summary {
+      display: flex;
+    }
+    .news-summary li {
+      flex-grow: 1;
+      flex-basis: 33.3333%;
+    }
+  }
+  .news-summary img {
+    display: block;
+  }
+  .news-summary iframe {
+    width: 100%;
+    border-width: 0;
+  }
+
+  .introduction {
+    background-color: rgb(237, 237, 239);
+    position: relative;
+    padding-bottom: 0;
+  }
+  .introduction > div {
+    position: relative;
+    background: rgb(237, 237, 239);
+    background: linear-gradient(to bottom, rgba(237, 237, 239, 0.75), rgb(237, 237, 239) 25%, rgb(237, 237, 239));
+    z-index: 1;
+    padding: 1.5em;
+  }
+  .introduction h1 {
+    margin-bottom: 0;
+  }
+  .introduction h2 {
+    margin-top: 0.65em;
+    font-family: "Roboto Slab", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+    border-top: 2px solid;
+    padding-top: 0.65em;
+    font-size: 1.25em;
+    line-height: 1.2;
+  }
+  .introduction > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .introduction div {
+    margin-top: -9em;
+  }
+  @media (min-width: 45em) {
+    .introduction > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: auto;
+      object-fit: cover;
+    }
+    .introduction {
+      min-height: 100vh;
+    }
+    .introduction div {
+      margin-top: 0;
+      background: rgba(237, 237, 239, 0.75);
+      position: relative;
+      padding: 6em 3em 1.5em;
+      margin-left: 33.333%;
+      margin-right: 5%;
+    }
+    .introduction.reverse > img {
+      left: auto;
+      right: 0;
+    }
+    .introduction.reverse div {
+      margin-right: 33.333%;
+      margin-left: 5%;
+    }
+  }

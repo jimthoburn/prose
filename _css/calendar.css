@@ -1,0 +1,48 @@
+
+  /* =Calendar
+  ----------------------------------------------- */
+  dl:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  dl dt {
+    clear: both;
+    width: 33.333%;
+    float: left;
+    text-align: right;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 0.375em;
+    padding-bottom: 0.375em;
+    box-sizing: border-box;
+  }
+  dl dt + dd {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 0.375em;
+  }
+  dl dd {
+    padding-left: 1.5em;
+    padding-bottom: 0.375em;
+    margin-left: 33.333%;
+    width: 66.666%;
+    box-sizing: border-box;
+    color: black;
+  }
+  dl dd em {
+    opacity: 0.5;
+  }
+  dl dd span {
+    display: inline-block;
+    min-width: 3em;
+  }
+  dl dd span:first-child {
+    text-align: right;
+  }
+
+  dl.calendar dt {
+    width: 25%;
+  }
+  dl.calendar dd {
+    margin-left: 25%;
+    width: 75%;
+  }

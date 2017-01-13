@@ -13,15 +13,13 @@ layout: site-map
 ### Key Pages
 
 * [Home](/)
-* [About](/about)
-* [Courses](/academics)
-* [Staff](/staff)
-* [PBIS](/pbis)
-* [News](/news)
-* [Calendar](/calendar)
-* [Bell Schedule](/schedule)
-* [Parents & Students](/parents)
-* [Page Not Found (404)](/404)
+* [About](/about/)
+* [Academics](/academics/)
+* [Staff](/staff/)
+* [Support & Wellness](/wellness/)
+* [Student Life](/life/)
+* [Athletics](/athletics/)
+* [Partnerships](/partnerships/)
 
 </section>
 </section>

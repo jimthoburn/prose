@@ -3,20 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i|Roboto+Slab:100,300,400,700" />
   <link rel="stylesheet" href="/css/shared.css" />
 </head>
-<body>
+<body class="{% if page.image %} has-image{% endif %}">
   <header>
-    <h2><a href="/">Sierra High School</a></h2>
+    <h2>
+      <a href="/">
+        <img src="/images/azusa.png" width="150" alt="" />
+        Sierra High School
+      </a>
+    </h2>
     <p>Home of the Mountain Lions</p>
 
     <p class="nav-link"><a href="#menu">Menu</a></p>
   </header>
 
-  <main{% if page.classname %} class="{{ page.classname }}"{% endif %}>
+  {% if page.image %}
+  <div class="image {% if page.image_focus == 'top' %} image-focus-top {% elsif page.image_focus == 'bottom' %} image-focus-bottom {% endif %}"><img src="{{ page.image }}" alt="" /></div>
+  {% endif %}
+
+  <main{% if page.has_wide_content %} class="has-wide-content"{% endif %}>
     {{ content }}
   </main>
 
@@ -24,40 +34,58 @@
 
     <ul>
       <li>
-        <h2><a href="/about">About Our School</a></h2>
+        <h2><a href="/academics">Academics</a></h2>
         <ul>
-          <li><a href="/academics">Courses</a></li>
+          <li><a href="/academics/#world-language-courses">World Language</a></li>
+          <li><a href="/academics/#english-language-development">English Language</a></li>
+          <li><a href="/academics/#math-support">Math Support</a></li>
+          <li><a href="/academics/#advanced-placement--honors-courses">Advanced Placement</a></li>
+          <li><a href="/academics/#advanced-placement--honors-courses">Honors Courses</a></li>
+          <li><a href="/academics/#electives">Electives</a></li>
+          <li><a href="/academics/#pathway-programs--college-career-prep-courses">Pathway Programs</a></li>
+          <li><a href="/academics/#matriculation">Matriculation</a></li>
+        </ul>
+      </li>
+      <li>
+        <h2><a href="/athletics">Athletics</a></h2>
+        <ul>
+          <li><a href="/athletics">Teams</a></li>
+        </ul>
+      </li>
+      <li>
+        <h2><a href="/life">Student Life</a></h2>
+        <ul>
+          <li><a href="/life#clubs">Clubs</a></li>
+        </ul>
+      </li>
+      <li>
+        <h2><a href="/wellness">Support &amp; Wellness</a></h2>
+        <ul>
+          <li><a href="/wellness/#afterschool-programs">After School</a></li>
+          <li><a href="/wellness/#special-education">Special Education</a></li>
+          <li><a href="/wellness/#bilingual-education">Bilingual Education</a></li>
+        </ul>
+      </li>
+      <li>
+        <h2><a href="/partnerships">Partnerships</a></h2>
+        <ul>
+          <li><a href="/partnerships/#community-partnerships">Community</a></li>
+          <li><a href="/partnerships/#colleges-and-universities">Universities</a></li>
+          <li><a href="/partnerships/#corporations">Corporations</a></li>
+          <li><a href="/partnerships/#non-profits-and-others">Non-Profits</a></li>
         </ul>
       </li>
       <li>
         <h2><a href="/staff">Our Staff</a></h2>
         <ul>
-          <li><a href="/staff#teachers">Teachers</a></li>
-          <li><a href="/staff#counselor">Counselor</a></li>
+          <li><a href="/staff">Administration</a></li>
+          <li><a href="/staff/#teachers">Teachers</a></li>
         </ul>
       </li>
       <li>
-        <h2><a href="/parents">Parents &amp; Students</a></h2>
+        <h2><a href="/about">About Our School</a></h2>
         <ul>
-          <li><a href="/parents#activities">Activities</a></li>
-          <li><a href="/parents#attendance">Attendance</a></li>
-          <li><a href="/parents#credits">Credits</a></li>
-          <li><a href="/parents#dress-code">Dress Code</a></li>
-          <li><a href="/parents">Parent/Student Portal</a></li>
-          <li><a href="/schedule">Bell Schedule</a></li>
-        </ul>
-      </li>
-      <li>
-        <h2><a href="/calendar">Calendar</a></h2>
-        <ul>
-          <li><a href="/calendar#tutoring">Tutoring</a></li>
-          <li><a href="/calendar#apu">APU Option Students</a></li>
-        </ul>
-      </li>
-      <li>
-        <h2><a href="/news">News &amp; Announcements</a></h2>
-        <ul>
-          <li><a href="/pbis"><abbr title="Positive Behavioral Intervention & Supports">PBIS</abbr></a></li>
+          <li><a href="/about/#message-from-our-prinicipal">Principal’s Message</a></li>
         </ul>
       </li>
     </ul>
