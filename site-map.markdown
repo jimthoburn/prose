@@ -1,6 +1,6 @@
 ---
-layout: site-map
 title: Website Prototype, Sierra High School
+layout: site-map
 ---
 
 # Sierra High School
