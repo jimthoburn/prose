@@ -1,0 +1,28 @@
+<div class="staff-list">
+  <h2>Our teachers</h2>
+  <ul>
+    {% assign staff_members = site.staff | where:'categories', 'Teachers' | sort:"name", "last" %}
+    {% for member in staff_members limit:4 %}
+      <li>
+        {% if member['photo'] %}
+          <img src="{{ member['photo'] }}" />
+        {% endif %}
+
+        <h3>{{ member['title'] }}</h3>
+
+        {% if member['title or subject taught'] %}
+        <p class="title">{{ member['title or subject taught'] }}</p>
+        {% endif %}
+
+        {% if member['email'] %}
+          <p><a href="mailto:{{ member['Email'] }}">{{ member['email'] }}</a></p>
+        {% endif %}
+
+        {% if member['phone'] %}
+          <p>{{ member['phone'] }}</p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  <p>See more <a href="/staff">staff members</a></p>
+</div>
