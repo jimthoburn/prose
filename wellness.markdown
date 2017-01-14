@@ -1,36 +1,22 @@
 ---
 title: Support and Wellness Programs at Sierra High School
 layout: default
-image: "/images/photos/computer-lab.jpg"
+image: "/images/photos/lunch.jpg"
 ---
 
 <div class="text" markdown="1">
 
-# Support and Wellness
+# Support And Wellness Programs
 
-Bronze level award for Positive Behavior Intervention and Support (PBIS)
+Intervention Programs
+: After School Tutoring
+: After School Weight Program
 
-## Afterschool Programs
+Afterschool Programs
+: Tutoring
+: Weight Program
 
-*   Cheer
-*   Tutoring
-*   Femineers Program GATE
-
-## Special Education
-
-*   We offer full program to support students with special needs.
-*   Life Skills Program
-
-## Bilingual Education
-
-*   SDAIE courses
-*   English Language Development classes
-*   Student Wellness Center
-*   Student Health Office
-*   School Psychologist, Counselors, and Mental Health Specialists on campus College and Career Center
-*   College and Career Center staffed with a full time Technician
-*   College Speakers
-*   Military Speakers
-*   Naviance College and Career Planning software program
+Special Education
+: Special Education support
 
 </div>

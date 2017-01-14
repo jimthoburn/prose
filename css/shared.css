@@ -5,28 +5,28 @@
   ----------------------------------------------- */
 
   body {
-    background-color: rgba(255, 204, 0, 0.025); /* --gold */
+    background-color: rgba(32, 85, 135, 0.025); /* --ocean */
     color: rgb(40, 41, 43);
   }
 
   a {
-    color: rgb(0, 51, 135);
+    color: rgb(46, 127, 182);
   }
 
   main h1,
   main h2 {
-    color: rgb(0, 51, 135);
+    color: rgb(46, 127, 182);
   }
 
   dt {
-    color: rgb(0, 51, 135);
+    color: rgb(46, 127, 182);
   }
 
   body > nav,
   body > footer {
-    background-color: rgb(255, 204, 0);
-    color: rgba(255, 255, 255, 0.9);
+    background-color: rgb(46, 127, 182);
     color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.9);
   }
 
   body > nav button {
@@ -618,7 +618,7 @@
     font-family: inherit;
     font-size: inherit;
     background-color: rgba(0, 0, 0, 0.25);
-    background-color: rgb(0, 51, 135);
+    background-color: rgb(46, 127, 182);
     color: white;
     border-width: 0;
     padding: 0.375em 0.75em;

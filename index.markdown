@@ -1,15 +1,19 @@
 ---
-title: Sierra High School, Every student college and career ready
+title: Sierra High School, Bringing aspiration into reality
 classname: home
 layout: default
 has_wide_content: true
-image: "/images/students/img_0482.jpg"
+image: "/images/photos/academics.jpg"
 image_focus: 'top'
 ---
 
-# Every student college <small>and</small> career ready
+# Bringing aspiration <small>into</small> reality
 
-Our mission is to provide a 21st century education that emphasizes critical thinking, effective communication, and respect for diversity and creativity in a safe and positive environment that is supported by collaborative community involvement in order to develop successful citizens that are college and career ready.
+Sierra High School is a place where students have a second opportunity to achieve academic success. To bring this aspiration into reality we:
+
+*   model and build good relationships
+*   develop skills and knowledge
+*   foster independent thinking in a safe environment
 
 Learn more [about our school](/about)
 
@@ -87,23 +91,10 @@ Learn more [about our school](/about)
 
 
 <div class="summaries">
-  <div class="facilities-summary text" markdown="1">
-## Facilities
-
-*   Gym
-*   Theater
-*   4 computer labs
-*   Track and field
-*   Ceramics lab
-*   Engineering lab
-*   Band room
-*   Choir room
-  </div>
-
   <div class="parents-summary text" markdown="1">
 ## Parents & students
 
-Learn about attendance, handbooks, dress code and more on the [parents & students](http://info.sierrahighschool.jimthoburn.com/parentwelcome) page.
+Learn about attendance, handbooks, dress code and more on the [parents & students](http://info.sierrahighschool.jimthoburn.com/Parents) page.
   </div>
 
   <div class="calendar-summary text" markdown="1">
@@ -138,9 +129,9 @@ Students return to school on January 11th.
 </li>
 <li class="text" markdown="1">
 
-### Math tutoring is now available
+### Tutoring is now available
 
-Monday through Thursday from 3:00 - 4:00 p.m. in the Library. Take advantage of this opportunity!
+Tuesdays and Thursdays in the computer lab, from 2pm to 3pm. Take advantage of this opportunity!
 
 </li>
 </ul>
@@ -162,6 +153,7 @@ Monday through Thursday from 3:00 - 4:00 p.m. in the Library. Take advantage of 
     <p>Congratulations to Sierra High School's Violet Vargas for her Third Place Finish in The Rotary Club’s speech contest…</p>
   </a>
 
+  <!--
   <svg class="heart icon" viewBox="0 0 24 24" width="24" height="24">
     <path fill="white" d="M17.631 5.93c-0.394-0.913-1.185-1.682-2.281-2.158-0.968-0.422-2.012-0.471-2.96-0.214s-1.801 0.956-2.388 1.767c-0.588-0.811-1.44-1.511-2.389-1.767-0.949-0.258-1.991-0.207-2.96 0.214-1.096 0.476-1.885 1.243-2.281 2.158-0.394 0.912-0.397 1.974 0.103 3.027 1.062 2.257 7.494 7.55 7.529 7.64 0.033-0.090 6.466-5.383 7.53-7.64 0.498-1.053 0.496-2.115 0.101-3.027z"></path>
   </svg>
@@ -173,6 +165,7 @@ Monday through Thursday from 3:00 - 4:00 p.m. in the Library. Take advantage of 
       c-0.1-0.1-0.1-0.3-0.2-0.5s-0.2-0.4-0.2-0.7c0.9-0.5,1.6-1.2,2.1-1.9s0.8-1.6,0.8-2.4c0-0.8-0.2-1.5-0.6-2.2s-1-1.3-1.7-1.8
       S14,4.1,13,3.8s-2-0.4-3-0.4c-1.4,0-2.7,0.2-3.9,0.7S4,5.2,3.3,6.1S2.2,7.9,2.2,8.9z"></path>
   </svg>
+  -->
 </div>
 
 <ul class="news-summary">

@@ -2,19 +2,36 @@
 title: About Sierra High School
 layout: default
 image: "/images/photos/classroom-2.jpg"
-image_focus: bottom
 ---
 
 <div class="text" markdown="1">
 
 # About Our School
 
-Our mission is to provide a 21st century education that emphasizes critical thinking, effective communication, and respect for diversity and creativity in a safe and positive environment that is supported by collaborative community involvement in order to develop successful citizens that are college and career ready.
+Sierra High School is a fully accredited California Model Continuation High School serving students 16 years of age and older. Although some students are placed at Sierra for disciplinary reasons, most are placed because they are behind in credits and need specialized attention within an alternative educational environment. Students may also choose Sierra as an alternative to attending a comprehensive high school. Sierra High School is on a trimester system which allows students to enroll in up to six courses each session. Students may earn up to 90 credits per year, giving them an increased opportunity to earn the 220 credits required for a high school diploma. In addition to full time enrollment at Sierra, students may earn additional credits through the Regional Occupational Program (ROP) and through the Azusa Adult School.
 
-At Sierra High School, we are the home of the Aztecs. We have longstanding traditions that include our mascots (Warrior and Warriorette) who are selected by the students each year. At each of our assemblies our mascots beat our Aztec Drum. Other traditions include the singing of our Alma Mater at the conclusion of every rally, on the buses returning to school after athletic competitions, and at the conclusion of every home football game. Our motto is: “Once an Aztec, Always an Aztec”.
+Central to the school’s philosophy is the belief that provided a personalized, caring, and enriched environment students will develop to their fullest potential. The ultimate goal of Sierra High School is to develop a person who is willing to accept and display the responsibilities of good citizenship and to perform satisfactorily as a contributing member of our society. We’re also [a model school](http://info.sierrahighschool.jimthoburn.com/a-model-school/).
+
+## Vision
+
+Sierra High School is an alternative education program that provides a personalized, enriched, and varied environment that enables students to develop to their full potential. With collaboration of a caring sta≠ and support of their family and community, students will graduate with a strong vision for a successful future.
+
+## Behavior Statement
+
+Sierra High School is committed to fostering a positive learning experience by providing a safe and respectful environment, ensuring academic achievement and personal success that will extend beyond the classroom.
+
+Sierra Mountain Lions are expected to:
+
+* Be Respectful
+* Be Responsible
+* Be Ready
 
 ## Message from Our Principal
 
-I am honored and privileged to serve as the Principal of Sierra High School. Sierra High School has amazing programs and pathways such as AP and Honors, International Baccalaureate Diploma Program, AVID, Engineering, Business, Visual and Performing Arts, Fashion and Interior Design, and JROTC just to name a few. At Sierra High School, we have an abundance of opportunities for students to get involved in co-curricular and extra-curricular activities including our band and pageantry, Aztec Singers, athletic programs, Leader Academy, and theater productions. The well-rounded educational experiences we offer will prepare students to be successful, well-rounded citizens and provide them with experiences that will shape their future endeavors. I sincerely believe that all students can achieve at high levels and I want to ensure that they have the opportunity to do so at Sierra High School so that they are prepared for college and career.
+Greetings Sierra High School families,
+
+Sierra High School is a place where students receive a second opportunity to receive the same academically rigorous education as a comprehensive high school while in a small school setting. Sierra’s sta≠ is dedicated to meeting the individual academic needs of all students by providing support for success both in and out of the classroom. We are proud to be a fully accredited WASC school and Model Continuation School. All of our core courses are Common Core aligned and students have access to the most up-to- date technology to assist them in the classroom. In addition to our academic focus, Sierra students have the opportunity to participate in a sports league that include co ed football, basketball, softball, and soccer. This year we are proud to o≠er our first AP course, AP Human Geography and plan to implement more AP courses next year. We are also excited to partner with Citrus College. We will be o≠ering Counseling 160 and Counseling 145 to support students as they begin the transition from High School to College or career.
+
+There are a lot of exciting things happening at Sierra. Come join us and achieve your goals
 
 </div>
