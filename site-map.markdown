@@ -18,8 +18,8 @@ layout: site-map
 * [Staff](/staff/)
 * [Support & Wellness](/wellness/)
 * [Student Life](/life/)
-* [Athletics](/athletics/)
-* [Partnerships](/partnerships/)
+* [Graduation Requirements](/graduation/)
+* [Pathways](/pathways/)
 
 </section>
 </section>
