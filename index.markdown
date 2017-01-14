@@ -4,7 +4,7 @@ classname: home
 layout: default
 has_wide_content: true
 image: "/images/photos/academics.jpg"
-image_focus: 'top'
+image_focus: top
 ---
 
 # Bringing aspiration <small>into</small> reality
