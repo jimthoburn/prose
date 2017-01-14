@@ -19,7 +19,7 @@ Learn more [about our school](/about)
 
 <!--
 <div class="introduction">
-  <img src="/images/students/IMG_0760.jpg" width="500" alt="" />
+  <img src="/images/students/img_0760.jpg" width="500" alt="" />
   <div>
     <h1>Bringing aspiration into reality</h1>
 
@@ -36,26 +36,26 @@ Learn more [about our school](/about)
 <script>
 (function() {
   var images = [
-    '/images/students/IMG_0284.jpg',
-    '/images/students/IMG_0325.jpg',
-    '/images/students/IMG_0381.jpg',
-    '/images/students/IMG_0482.jpg',
-    '/images/students/IMG_0614.jpg',
-    '/images/students/IMG_0683.jpg',
-    '/images/students/IMG_0731.jpg',
-    '/images/students/IMG_0760.jpg',
-    '/images/students/IMG_1065.jpg'
+    '/images/students/img_0284.jpg',
+    '/images/students/img_0325.jpg',
+    '/images/students/img_0381.jpg',
+    '/images/students/img_0482.jpg',
+    '/images/students/img_0614.jpg',
+    '/images/students/img_0683.jpg',
+    '/images/students/img_0731.jpg',
+    '/images/students/img_0760.jpg',
+    '/images/students/img_1065.jpg'
   ];
   var min = 0;
   var max = images.length - 1;
   var random = Math.floor(Math.random() * (max - min + 1) + min);
   var image = document.querySelector('.introduction img');
   image.src = images[random];
-  if (images[random].indexOf('IMG_0284.jpg') >= 0 ||
-      images[random].indexOf('IMG_0381.jpg') >= 0 ||
-      images[random].indexOf('IMG_0482.jpg') >= 0 ||
-      images[random].indexOf('IMG_0614.jpg') >= 0 ||
-      images[random].indexOf('IMG_1065.jpg') >= 0) {
+  if (images[random].indexOf('img_0284.jpg') >= 0 ||
+      images[random].indexOf('img_0381.jpg') >= 0 ||
+      images[random].indexOf('img_0482.jpg') >= 0 ||
+      images[random].indexOf('img_0614.jpg') >= 0 ||
+      images[random].indexOf('img_1065.jpg') >= 0) {
     image.parentNode.className += ' reverse';
   }
 })();
@@ -66,22 +66,22 @@ Learn more [about our school](/about)
   <h2>Our Teachers</h2>
   <ul>
     <li>
-      <img src="/images/staff/IMG_0218.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+      <img src="/images/staff/img_0218.jpg" width="200" alt="TODO: Add Teacher’s Name" />
       <h3>Mr. Charlie Callison</h3>
       <p class="title">Biology</p>
     </li>
     <li>
-      <img src="/images/staff/IMG_0064.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+      <img src="/images/staff/img_0064.jpg" width="200" alt="TODO: Add Teacher’s Name" />
       <h3>Mrs. Shirley D’Avis</h3>
       <p class="title">English, Yearbook &amp; Leadership</p>
     </li>
     <li>
-      <img src="/images/staff/IMG_0102.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+      <img src="/images/staff/img_0102.jpg" width="200" alt="TODO: Add Teacher’s Name" />
       <h3>Ms. Darla Elliott</h3>
       <p class="title">English</p>
     </li>
     <li>
-      <img src="/images/staff/IMG_0119.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+      <img src="/images/staff/img_0119.jpg" width="200" alt="TODO: Add Teacher’s Name" />
       <h3>Ms. Barbara Klaus</h3>
       <p class="title">Science &amp; Math</p>
     </li>
