@@ -52,6 +52,12 @@ image: "/images/photos/writing.jpg"
 
 * AP Government <small>(Coming Next Year)</small>
 
+## Pathway Programs / College-Career Preparatory Courses
+
+* Administration of Justice/Law
+* ASL - American Sign language
+* Childhood Development
+
 ## Expected School-wide Learning Results (ESLRs)
 
 ### Sierra High School graduates will be effective communicators who:

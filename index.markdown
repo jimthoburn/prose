@@ -94,7 +94,7 @@ Learn more [about our school](/about)
   <div class="parents-summary text" markdown="1">
 ## Parents & students
 
-Learn about attendance, handbooks, dress code and more on the [parents & students](http://info.sierrahighschool.jimthoburn.com/Parents) page.
+Learn about attendance, handbooks, dress code and more on the [parents & students](/parents/) page.
   </div>
 
   <div class="calendar-summary text" markdown="1">

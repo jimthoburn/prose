@@ -18,8 +18,7 @@ layout: site-map
 * [Staff](/staff/)
 * [Support & Wellness](/wellness/)
 * [Student Life](/life/)
-* [Graduation Requirements](/graduation/)
-* [Pathways](/pathways/)
+* [Parents & Students](/parents/)
 
 </section>
 </section>
