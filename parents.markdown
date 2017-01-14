@@ -1,7 +1,7 @@
 ---
-title: Graduation Requirements at Sierra High School
-layout: default
+title: Parents & Students at Sierra High School
 image: "/images/photos/caligraphy.jpg"
+layout: default
 ---
 
 <div class="text" markdown="1">
