@@ -12,21 +12,21 @@ Sierra High School is an alternative education program that provides a personali
 
 ## Popular Pages
 
-*   [Courses](academics.html)
-*   [Bell Schedule](schedule.html)
-*   <a href="">Azusa PD Safety Tips (English)</a>
-*   <a href="">Azusa PD Safety Tips (Spanish)</a>
-*   <a href="">School Plan</a>
-*   <a href="">Aeries Parent/Student Portal</a>
-*   <a href="">Handbook English</a>
-*   <a href="">Handbook Spanish</a>
-*   <a href="">NEW Graduation Requirements</a>
-*   <a href="">Non-Discrimination and Harassment</a>
-*   <a href="">SARC English</a>
-*   <a href="">SARC Spanish</a>
-*   <a href="">Sexual Harassment</a>
-*   <a href="">Uniform Complaint Procedures</a>
-*   <a href="">WASC Self-Study</a>
+* [Courses](/academics/)
+* [Bell Schedule](/schedule/)
+* [Azusa PD Safety Tips (English)](http://shs-ausd-ca.schoolloop.com/file/1301752510678/1323005745930/83889132856240649.pdf)
+* [Azusa PD Safety Tips (Spanish)](http://shs-ausd-ca.schoolloop.com/file/1301752510678/1323005745930/3262596508675599404.pdf)
+* [School Plan](http://shs-ausd-ca.schoolloop.com/file/1301752511314/1312696999544/4570842327717809203.pdf)
+* [Aeries Parent/Student Portal](http://azusa.org/portal/)
+* [Handbook English](http://shs-ausd-ca.schoolloop.com/file/1301752510678/1312696999544/7703176078546006498.pdf)
+* [Handbook Spanish](http://shs-ausd-ca.schoolloop.com/file/1301752510678/1312696999544/4503491334434827765.pdf)
+* [NEW Graduation Requirements](http://shs-ausd-ca.schoolloop.com/file/1301752510678/1312696999544/7438316866353557339.pdf)
+* [Non-Discrimination and Harassment](http://www.gamutonline.net/district/azusa/displayPolicy/560705/index.html)
+* [SARC English](http://shs-ausd-ca.schoolloop.com/file/1301752510678/1312696999544/8398267011084895868.pdf)
+* [SARC Spanish](http://shs-ausd-ca.schoolloop.com/file/1301752510678/1312696999544/8880788251379766898.pdf)
+* [Sexual Harassment](http://www.gamutonline.net/district/azusa/displayPolicy/560708/index.html)
+* [Uniform Complaint Procedures](http://www.gamutonline.net/district/azusa/displayPolicy/491099/index.html)
+* [WASC Self-Study](http://shs-ausd-ca.schoolloop.com/file/1301752510678/685205264068010517.pdf)
 
 ## Activities
 

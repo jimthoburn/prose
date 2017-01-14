@@ -1,0 +1,10 @@
+---
+title: Page not found, Sierra High School
+layout: default
+---
+
+# Oops!
+
+## We couldn’t find that page.
+
+Please try visiting our [home page](/) instead.
