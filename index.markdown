@@ -2,8 +2,26 @@
 title: Sierra High School, Bringing aspiration into reality
 layout: default
 has_wide_content: true
-image: "/images/photos/one-student.png"
+image: "/images/photos/one-student.jpg"
 ---
+
+<script>
+(function() {
+  var images = [
+    '/images/photos/one-student-academics.jpg',
+    '/images/photos/one-student-art.jpg',
+    '/images/photos/one-student-book.jpg',
+    '/images/photos/one-student-computer.jpg',
+    '/images/photos/one-student-microscope.jpg',
+    '/images/photos/one-student-science.jpg'
+  ];
+  var min = 0;
+  var max = images.length - 1;
+  var random = Math.floor(Math.random() * (max - min + 1) + min);
+  var image = document.querySelector('.image img');
+  image.src = images[random];
+})();
+</script>
 
 # Bringing aspiration <small>into</small> reality
 
@@ -18,51 +36,6 @@ Learn more [about our school](/about)
 <div class="staff-list">
   <h2>Our Teachers</h2>
   <ul>
-<!--
-<div class="introduction">
-  <img src="/images/students/img_0760.jpg" width="500" alt="" />
-  <div>
-    <h1>Bringing aspiration into reality</h1>
-
-    <p>Sierra High School is a place where students have a second opportunity to achieve academic success. To bring this aspiration into reality we:</p>
-
-    <ul>
-      <li>model and build good relationships</li>
-      <li>develop skills and knowledge</li>
-      <li>foster independent thinking in a safe environment</li>
-    </ul>
-    <p>Learn more <a href="about.html">about our school</a></p>
-  </div>
-</div>
-<script>
-(function() {
-  var images = [
-    '/images/students/img_0284.jpg',
-    '/images/students/img_0325.jpg',
-    '/images/students/img_0381.jpg',
-    '/images/students/img_0482.jpg',
-    '/images/students/img_0614.jpg',
-    '/images/students/img_0683.jpg',
-    '/images/students/img_0731.jpg',
-    '/images/students/img_0760.jpg',
-    '/images/students/img_1065.jpg'
-  ];
-  var min = 0;
-  var max = images.length - 1;
-  var random = Math.floor(Math.random() * (max - min + 1) + min);
-  var image = document.querySelector('.introduction img');
-  image.src = images[random];
-  if (images[random].indexOf('img_0284.jpg') >= 0 ||
-      images[random].indexOf('img_0381.jpg') >= 0 ||
-      images[random].indexOf('img_0482.jpg') >= 0 ||
-      images[random].indexOf('img_0614.jpg') >= 0 ||
-      images[random].indexOf('img_1065.jpg') >= 0) {
-    image.parentNode.className += ' reverse';
-  }
-})();
-</script>
--->
-
     <li>
       <img src="/images/staff/img_0218.jpg" width="200" alt="" />
       <h3>Mr. Charlie Callison</h3>
