@@ -2,14 +2,14 @@
 title: Sierra High School, Bringing aspiration into reality
 layout: default
 has_wide_content: true
-image: '/images/photos/one-student-academics.jpg'
+image: "/images/photos/one-student-academics.jpg"
 images:
-- '/images/photos/one-student-academics.jpg'
-- '/images/photos/one-student-art.jpg'
-- '/images/photos/one-student-book.jpg'
-- '/images/photos/one-student-computer.jpg'
-- '/images/photos/one-student-microscope.jpg'
-- '/images/photos/one-student-science.jpg'
+- "/images/photos/one-student-academics.jpg"
+- "/images/photos/one-student-art.jpg"
+- "/images/photos/one-student-book.jpg"
+- "/images/photos/one-student-computer.jpg"
+- "/images/photos/one-student-microscope.jpg"
+- "/images/photos/one-student-science.jpg"
 ---
 
 # Bringing aspiration <small>into</small> reality
