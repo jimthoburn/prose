@@ -1,23 +1,6 @@
 
   /* =Home
   ----------------------------------------------- */
-  /*
-  .home header {
-    position: absolute;
-    background-color: transparent;
-    color: white;
-    z-index: 1;
-    padding-left: 1.5em;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .home main {
-    padding-bottom: 0;
-  }
-  */
-  .home main .staff-list {
-    margin-top: calc(var(--line-height) * 2);
-  }
   .summaries {
     margin-top: calc(var(--line-height) * 2);
     margin-left: calc(var(--line-height) * -1);
@@ -32,6 +15,7 @@
   .summaries div {
     padding: 3em 1.5em;
     background-color: rgb(222, 222, 222); /* @silver */
+    background-color: rgba(0, 0, 0, 0.05);
   }
   @media (min-width: 140em) {
     .summaries {
@@ -58,6 +42,7 @@
   }
   .summaries .parents-summary {
     background-color: rgb(238, 238, 238); /* @seashell */
+    background-color: rgba(0, 0, 0, 0.025);
   }
   .summaries div h2,
   .parents-summary h2,
@@ -86,7 +71,6 @@
 
   .news-summary li::before {
     content: "";
-    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0));
     background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0));
     position: absolute;
     top: 0;
@@ -142,7 +126,7 @@
   }
   .feature h2 svg {
     vertical-align: middle;
-    margin-right: calc(var(--line-height) / 4);
+    margin-right: 0.375em;
   }
   .feature .more {
     margin: 0;
@@ -216,9 +200,12 @@
   }
   .news-summary,
   .news-summary li {
+    /* @reset-list */
     list-style: none;
     margin-left: 0;
-    padding-left: 0;
+    padding: 0;
+    border-width: 0;
+    font-style: inherit;
   }
   .feature {
     margin-left: calc(var(--line-height) * -1);

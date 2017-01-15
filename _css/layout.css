@@ -8,6 +8,11 @@
   body > main {
     padding: var(--line-height);
   }
+  body > header {
+    padding-top: calc(var(--line-height) * 1.5);
+    padding-bottom: calc(var(--line-height) * 1.5);
+    box-sizing: border-box;
+  }
   body > main {
     padding-bottom: calc(var(--line-height) * 2); /* Twice the usual padding */
   }
@@ -27,10 +32,9 @@
   @media (min-aspect-ratio: 1/1) { /* --header-over-image-width */
     body.has-image > header {
       position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      padding-top: calc(var(--line-height) * 1.5);
-      padding-bottom: calc(var(--line-height) * 1.5);
-      box-sizing: border-box;
     }
   }
 
@@ -297,9 +301,12 @@
   body > nav li,
   body > footer ul,
   body > footer li {
+    /* @reset-list */
     list-style: none;
     margin-left: 0;
-    padding-left: 0;
+    padding: 0;
+    border-width: 0;
+    font-style: inherit;
   }
   body > header li,
   body > footer li {

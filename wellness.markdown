@@ -4,8 +4,6 @@ layout: default
 image: "/images/photos/lunch.jpg"
 ---
 
-<div class="text" markdown="1">
-
 # Support And Wellness Programs
 
 Intervention Programs
@@ -18,5 +16,3 @@ Afterschool Programs
 
 Special Education
 : Special Education support
-
-</div>

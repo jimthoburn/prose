@@ -4,8 +4,6 @@ layout: default
 image: "/images/photos/basketball.jpg"
 ---
 
-<div class="text" markdown="1">
-
 # Student Life
 
 Students have the opportunity to attend dances at their home school.
@@ -16,5 +14,3 @@ Students have the opportunity to attend dances at their home school.
 * Soccer
 * Softball
 * Basketball
-
-</div>

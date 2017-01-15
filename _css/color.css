@@ -4,21 +4,24 @@
   ----------------------------------------------- */
   :root {
     --gold: rgb(255, 204, 0);
-    --ocean: rgb(32, 85, 135);
+    --dark-ocean: rgb(32, 85, 135);
     --ocean: rgb(46, 127, 182);
+
+rgb(46, )
 
     --tungsten: rgb(40, 41, 43);
   }
 
   :root {
     --text-color: var(--tungsten);
-    --link-color: var(--ocean);
-    --button-color: var(--ocean);
+    --link-color: var(--dark-ocean);
+    --button-color: var(--dark-ocean);
     --headline-color: var(--ocean);
   }
 
   body {
-    background-color: rgba(32, 85, 135, 0.025); /* --ocean */
+    background-color: white;
+    background-color: rgba(32, 85, 135, 0.01); /* --ocean */
     color: var(--text-color);
   }
 

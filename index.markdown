@@ -15,6 +15,9 @@ Sierra High School is a place where students have a second opportunity to achiev
 
 Learn more [about our school](/about)
 
+<div class="staff-list">
+  <h2>Our Teachers</h2>
+  <ul>
 <!--
 <div class="introduction">
   <img src="/images/students/img_0760.jpg" width="500" alt="" />
@@ -60,26 +63,23 @@ Learn more [about our school](/about)
 </script>
 -->
 
-<div class="staff-list">
-  <h2>Our Teachers</h2>
-  <ul>
     <li>
-      <img src="/images/staff/img_0218.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+      <img src="/images/staff/img_0218.jpg" width="200" alt="" />
       <h3>Mr. Charlie Callison</h3>
       <p class="title">Biology</p>
     </li>
     <li>
-      <img src="/images/staff/img_0064.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+      <img src="/images/staff/img_0064.jpg" width="200" alt="" />
       <h3>Mrs. Shirley D’Avis</h3>
       <p class="title">English, Yearbook &amp; Leadership</p>
     </li>
     <li>
-      <img src="/images/staff/img_0102.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+      <img src="/images/staff/img_0102.jpg" width="200" alt="" />
       <h3>Ms. Darla Elliott</h3>
       <p class="title">English</p>
     </li>
     <li>
-      <img src="/images/staff/img_0119.jpg" width="200" alt="TODO: Add Teacher’s Name" />
+      <img src="/images/staff/img_0119.jpg" width="200" alt="" />
       <h3>Ms. Barbara Klaus</h3>
       <p class="title">Science &amp; Math</p>
     </li>
@@ -118,14 +118,14 @@ January 11
 </header>
 
 <ul>
-<li class="text" markdown="1">
+<li markdown="1">
 
 ### Winter break is from December 23, 2016 - January 10, 2017.
 
 Students return to school on January 11th.
 
 </li>
-<li class="text" markdown="1">
+<li markdown="1">
 
 ### Tutoring is now available
 

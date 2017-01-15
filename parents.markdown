@@ -4,8 +4,6 @@ image: "/images/photos/caligraphy.jpg"
 layout: default
 ---
 
-<div class="text" markdown="1">
-
 # Parents & Students
 
 Sierra High School is an alternative education program that provides a personalized, enriched, and varied environment that enables students to develop to their full potential. With collaboration of a caring staff and support of their family and community, students will graduate with a strong vision for a successful future.
@@ -95,5 +93,3 @@ Electives
 
 CAHSEE
 : Must pass math and language arts exams with 350 or higher
-
-</div>

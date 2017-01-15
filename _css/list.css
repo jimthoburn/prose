@@ -1,38 +1,19 @@
 
   /* =List
   ----------------------------------------------- */
-  .text ul,
-  .text ul > li {
+  ul,
+  ul > li {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
   }
-  .text ul {
-  }
-  .text ul ul {
-    border-bottom-width: 0;
-  }
-  .text ul > li {
+  ul > li {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.375em 1.5em;
     box-sizing: border-box;
   }
-  /*
-  .text ul > li {
-    background-color: rgba(0, 0, 0, 0.025);
-    border-width: 0;
-  }
-
-  .text ul > li:nth-child(2n) {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-  */
-
-  .text ul > li ul {
+  ul > li ul {
     margin-top: 0.375em;
     margin-bottom: -0.375em;
     font-style: italic;
-  }
-  .text ul > li li {
-    background-color: transparent !important;
   }

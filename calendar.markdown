@@ -3,8 +3,6 @@ title: Calendar at Sierra High School
 layout: default
 ---
 
-<div class="text" markdown="1">
-
 # 2016-2017 Calendar
 
 November 9
@@ -90,5 +88,3 @@ There will be no tutoring sessions from December 22 to January 10 (Winter Break)
 ## APU Option Students
 
 Tuesdays in rooms 3 and 10, from 9:50am to 10:45am. The last session for the year will be on November 15, 2016.
-
-</div>

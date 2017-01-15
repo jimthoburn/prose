@@ -4,8 +4,6 @@ layout: default
 image: "/images/photos/academics.jpg"
 ---
 
-<div class="text" markdown="1">
-
 # Academics
 
 ## Courses
@@ -75,63 +73,3 @@ image: "/images/photos/academics.jpg"
 * Respect self and others
 * Demonstrate consistent and punctual attendance
 * Make good choices in daily living and who are accountable for their actions
-
-<!--
-
-## English
-
-*   English I
-*   English II
-*   English III
-*   Expository Reading and Writing (ERWC)
-*   Novel and Writing
-
-## Math
-
-*   Integrated I
-*   Integrated II
-*   Integrated III
-*   Survey of Mathematics
-
-## Science
-
-*   Biology
-*   Earth Science
-
-## Social Science
-
-*   World History
-*   US History
-*   Government
-*   Economics
-*   AP Human Geography
-*   AP Government <small>(Starting Fall 2017)</small>
-*   Latino Studies
-
-## Visual Arts
-
-*   Art
-*   Exploring Art
-*   AP Studio Art <small>(Starting Fall 2017)</small>
-*   Yearbook
-
-## College & Career Preparation
-
-*   Administration of Justice/Law
-*   American Sign language (ASL)
-*   Childhood Development
-
-## Physical Education
-
-*   Physical Education I
-*   Physical Education II
-
-## Electives
-
-*   Leadership
-*   Forensics
-*   Early Childhood Development
-
--->
-
-</div>

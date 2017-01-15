@@ -1,10 +1,7 @@
 ---
 title: Bell Schedule at Sierra High School
 layout: default
-image: "/images/photos/classroom.jpg"
 ---
-
-<div class="text" markdown="1">
 
 # Bell Schedule
 
@@ -80,5 +77,3 @@ Break
 
 Block 2
 : <span>12:50</span> – <span>1:30pm</span>
-
-</div>
