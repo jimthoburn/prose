@@ -177,10 +177,12 @@
     width: 100%;
     height: 100%;
   }
-  .feature img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+  @supports(object-fit: cover) {
+    .feature img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
   }
   .feature img + p {
     position: absolute;
