@@ -44,25 +44,25 @@
   }
 
   @media (min-width: 400px) and (min-height: 200px) {
-    body {
+    html {
       font-size: 112.5%;
     }
   }
 
   @media (min-width: 500px) and (min-height: 250px) {
-    body {
+    html {
       font-size: 125%;
     }
   }
 
   @media (min-width: 1000px) and (min-height: 50px) {
-    body {
+    html {
       font-size: 137.5%;
     }
   }
 
   @media (min-width: 1500px) and (min-height: 750px) {
-    body {
+    html {
       font-size: 150%;
     }
   }
@@ -72,7 +72,7 @@
     margin-bottom: 0.75em;
 
     /* Limit line lengths, for readability. */
-    max-width: 40em;
+    max-width: 33em;
     /*
     margin-left: auto;
     margin-right: auto;
@@ -315,13 +315,31 @@
     }
   }
 
-  body.has-image > header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
+  @supports ((-o-object-fit: cover) or (object-fit: cover)) {
+    body.has-image > header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
   }
+
+  /*
+  @media (min-width: 44em) {
+    main:not(.has-wide-content) {
+      margin-left: 12.5%;
+      width: 75%;
+      box-sizing: border-box;
+    }
+  }
+  @media (min-width: 88em) {
+    main:not(.has-wide-content) {
+      margin-left: 25%;
+      width: 50%;
+    }
+  }
+  */
 
   main:not(.has-wide-content) {
     max-width: 40em;
@@ -329,8 +347,21 @@
     margin-right: auto;
   }
 
-  main h1:first-child {
+  main > h1:first-child {
     margin-top: 0;
+  }
+
+  @media (min-width: 66em) {
+    /*
+    main:not(.has-wide-content) > h1:first-child {
+      margin-left: calc(-25vw + 3rem);
+      margin-bottom: 2.25rem;
+    }
+    main:not(.has-wide-content) > h2 {
+      margin-left: calc(-25vw + 3rem);
+      margin-bottom: 2.25rem;
+    }
+    */
   }
 
   /* =Image
@@ -344,8 +375,8 @@
   .image::before {
     content: "";
     background: rgba(0, 0, 0, 0.2);
-    background: -webkit-linear-gradient(75deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
-    background: linear-gradient(15deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+    background: -webkit-linear-gradient(285deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+    background: linear-gradient(165deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
     position: absolute;
     top: 0;
     left: 0;
@@ -354,8 +385,30 @@
     z-index: 0;
   }
 
-  body.has-image > header {
-    color: white;
+  @supports((-o-object-fit: cover) or (object-fit: cover)) {
+    .image::before {
+      background: -webkit-linear-gradient(75deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+      background: linear-gradient(15deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+    }
+  }
+
+  .image::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.05);
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  @supports ((-o-object-fit: cover) or (object-fit: cover)) {
+    body.has-image > header {
+      color: white;
+    }
   }
 
   .image img {
@@ -367,11 +420,17 @@
   @supports ((-o-object-fit: cover) or (object-fit: cover)) {
       .image img {
         width: 100%;
-        height: 75vh;
+        height: 50vh;
         -o-object-fit: cover;
            object-fit: cover;
         -o-object-position: center;
            object-position: center;
+      }
+      @media (min-aspect-ratio: 1/1) {
+        .image img {
+          height: 70vh;
+          min-height: 33vmax;
+        }
       }
       .image-focus-top img {
         -o-object-position: top;
@@ -448,12 +507,8 @@
   @media (min-width: 35em) {
     body > header {
       padding-top: 0;
+      padding-bottom: 0;
     }
-  }
-
-  body.has-image > header {
-    height: 75vh;
-    box-sizing: border-box;
   }
 
   body header > a {
@@ -464,13 +519,25 @@
     padding: 1.5em 1.5em 1.5em 5.25em;
   }
 
-  body.has-image > header > a {
-    position: absolute;
-    bottom: 0.75em;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25); 
+  @supports ((-o-object-fit: cover) or (object-fit: cover)) {
+    body.has-image > header {
+      height: 50vh;
+      box-sizing: border-box;
+    }
+    @media (min-aspect-ratio: 1/1) {
+      body.has-image > header {
+        height: 70vh;
+        min-height: 33vmax;
+      }
+    }
+    body.has-image > header > a {
+      position: absolute;
+      bottom: 0.75em;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    }
   }
 
-  @media (min-width: 60em) {
+  @media (min-width: 60em) { /* --big-screen-width */
     body > header > a {
       padding: 3em 3em 3em 5.25em;
     }
@@ -552,7 +619,7 @@
     right: 1.5em;
   }
 
-  @media (min-width: 60em) {
+  @media (min-width: 60em) { /* --big-screen-width */
     body > header .nav-link {
       top: 3em;
       right: 3em;
@@ -857,7 +924,7 @@
     }
   }
 
-  @media (min-width: 60em) {
+  @media (min-width: 60em) { /* --big-screen-width */
     .staff-list li {
       width: 25%;
     }
@@ -971,7 +1038,7 @@
     padding: 1.5em;
   }
 
-  @media (min-width: 60em) {
+  @media (min-width: 60em) { /* --big-screen-width */
     .news-summary li span {
       padding: 3em;
     }
@@ -1055,7 +1122,7 @@
 
   }
 
-  @media (min-width: 60em) {
+  @media (min-width: 60em) { /* --big-screen-width */
     .summaries div,
     .parents-summary,
     .news-summary-home {
@@ -1096,7 +1163,7 @@
     padding: 1.5em;
   }
 
-  @media (min-width: 60em) {
+  @media (min-width: 60em) { /* --big-screen-width */
     .feature img + p {
       padding: 3em;
     }
@@ -1162,7 +1229,7 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: 60em) {
+  @media (min-width: 60em) { /* --big-screen-width */
     .news-summary {
       display: -webkit-box;
       display: -ms-flexbox;

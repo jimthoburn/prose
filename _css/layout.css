@@ -24,22 +24,51 @@
     }
   }
 
-  body.has-image > header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
+  @supports (object-fit: cover) {
+    body.has-image > header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
   }
 
+  /*
+  @media (min-width: 44em) {
+    main:not(.has-wide-content) {
+      margin-left: 12.5%;
+      width: 75%;
+      box-sizing: border-box;
+    }
+  }
+  @media (min-width: 88em) {
+    main:not(.has-wide-content) {
+      margin-left: 25%;
+      width: 50%;
+    }
+  }
+  */
   main:not(.has-wide-content) {
     max-width: 40em;
     margin-left: auto;
     margin-right: auto;
   }
 
-  main h1:first-child {
+  main > h1:first-child {
     margin-top: 0;
+  }
+  @media (min-width: 66em) {
+    /*
+    main:not(.has-wide-content) > h1:first-child {
+      margin-left: calc(-25vw + 3rem);
+      margin-bottom: 2.25rem;
+    }
+    main:not(.has-wide-content) > h2 {
+      margin-left: calc(-25vw + 3rem);
+      margin-bottom: 2.25rem;
+    }
+    */
   }
 
 
@@ -52,7 +81,7 @@
   .image::before {
     content: "";
     background: rgba(0, 0, 0, 0.2);
-    background: linear-gradient(15deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+    background: linear-gradient(165deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
     position: absolute;
     top: 0;
     left: 0;
@@ -60,8 +89,26 @@
     height: 100%;
     z-index: 0;
   }
-  body.has-image > header {
-    color: white;
+  @supports(object-fit: cover) {
+    .image::before {
+      background: linear-gradient(15deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+    }
+  }
+  .image::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.05);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  @supports (object-fit: cover) {
+    body.has-image > header {
+      color: white;
+    }
   }
   .image img {
     display: block;
@@ -71,9 +118,15 @@
   @supports (object-fit: cover) {
       .image img {
         width: 100%;
-        height: 75vh;
+        height: 50vh;
         object-fit: cover;
         object-position: center;
+      }
+      @media (min-aspect-ratio: 1/1) {
+        .image img {
+          height: 70vh;
+          min-height: 33vmax;
+        }
       }
       .image-focus-top img {
         object-position: top;
@@ -143,11 +196,8 @@
   @media (min-width: 35em) {
     body > header {
       padding-top: 0;
+      padding-bottom: 0;
     }
-  }
-  body.has-image > header {
-    height: 75vh;
-    box-sizing: border-box;
   }
   body header > a {
     display: block;
@@ -156,12 +206,24 @@
     position: relative;
     padding: 1.5em 1.5em 1.5em 5.25em;
   }
-  body.has-image > header > a {
-    position: absolute;
-    bottom: 0.75em;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25); 
+  @supports (object-fit: cover) {
+    body.has-image > header {
+      height: 50vh;
+      box-sizing: border-box;
+    }
+    @media (min-aspect-ratio: 1/1) {
+      body.has-image > header {
+        height: 70vh;
+        min-height: 33vmax;
+      }
+    }
+    body.has-image > header > a {
+      position: absolute;
+      bottom: 0.75em;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    }
   }
-  @media (min-width: 60em) {
+  @media (min-width: 60em) { /* --big-screen-width */
     body > header > a {
       padding: 3em 3em 3em 5.25em;
     }
@@ -233,7 +295,7 @@
     top: calc(var(--line-height) * 1);
     right: calc(var(--line-height) * 1);
   }
-  @media (min-width: 60em) {
+  @media (min-width: 60em) { /* --big-screen-width */
     body > header .nav-link {
       top: calc(var(--line-height) * 2);
       right: calc(var(--line-height) * 2);

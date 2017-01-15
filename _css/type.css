@@ -13,25 +13,25 @@
   }
 
   @media (min-width: 400px) and (min-height: 200px) {
-    body {
+    html {
       font-size: 112.5%;
     }
   }
 
   @media (min-width: 500px) and (min-height: 250px) {
-    body {
+    html {
       font-size: 125%;
     }
   }
 
   @media (min-width: 1000px) and (min-height: 50px) {
-    body {
+    html {
       font-size: 137.5%;
     }
   }
 
   @media (min-width: 1500px) and (min-height: 750px) {
-    body {
+    html {
       font-size: 150%;
     }
   }
@@ -41,7 +41,7 @@
     margin-bottom: calc(var(--line-height) / 2);
 
     /* Limit line lengths, for readability. */
-    max-width: 40em;
+    max-width: 33em;
     /*
     margin-left: auto;
     margin-right: auto;
