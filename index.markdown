@@ -2,26 +2,15 @@
 title: Sierra High School, Bringing aspiration into reality
 layout: default
 has_wide_content: true
-image: "/images/photos/one-student.jpg"
+image: '/images/photos/one-student-academics.jpg'
+images:
+- '/images/photos/one-student-academics.jpg'
+- '/images/photos/one-student-art.jpg'
+- '/images/photos/one-student-book.jpg'
+- '/images/photos/one-student-computer.jpg'
+- '/images/photos/one-student-microscope.jpg'
+- '/images/photos/one-student-science.jpg'
 ---
-
-<script>
-(function() {
-  var images = [
-    '/images/photos/one-student-academics.jpg',
-    '/images/photos/one-student-art.jpg',
-    '/images/photos/one-student-book.jpg',
-    '/images/photos/one-student-computer.jpg',
-    '/images/photos/one-student-microscope.jpg',
-    '/images/photos/one-student-science.jpg'
-  ];
-  var min = 0;
-  var max = images.length - 1;
-  var random = Math.floor(Math.random() * (max - min + 1) + min);
-  var image = document.querySelector('.image img');
-  image.src = images[random];
-})();
-</script>
 
 # Bringing aspiration <small>into</small> reality
 

@@ -150,12 +150,12 @@
   /* =Calendar
   ----------------------------------------------- */
 
+  /*
   dl:after {
     content: "";
     display: table;
     clear: both;
   }
-
   dl dt {
     clear: both;
     width: 33.333%;
@@ -166,12 +166,10 @@
     padding-bottom: 0.375em;
     box-sizing: border-box;
   }
-
   dl dt + dd {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding-top: 0.375em;
   }
-
   dl dd {
     padding-left: 1.5em;
     padding-bottom: 0.375em;
@@ -180,16 +178,13 @@
     box-sizing: border-box;
     color: black;
   }
-
   dl dd em {
     opacity: 0.5;
   }
-
   dl dd span {
     display: inline-block;
     min-width: 3em;
   }
-
   dl dd span:first-child {
     text-align: right;
   }
@@ -197,10 +192,44 @@
   dl.calendar dt {
     width: 25%;
   }
-
   dl.calendar dd {
     margin-left: 25%;
     width: 75%;
+  }
+  */
+
+  dt {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 0.375em;
+  }
+
+  dd {
+    padding-bottom: 0.375em;
+  }
+
+  @media (min-width: 40em) {
+    dl:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    dt {
+      clear: both;
+      float: left;
+      width: 14em;
+      text-align: left;
+      padding-bottom: 0.375em;
+      box-sizing: border-box;
+      white-space: nowrap;
+    }
+    dt + dd {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      padding-top: 0.375em;
+    }
+    dd {
+      padding-left: 1.45em;
+      margin-left: 14em;
+    }
   }
 
   /* =List
@@ -432,11 +461,11 @@
           min-height: 33vmax;
         }
       }
-      .image-focus-top img {
+      body.image-focus-top .image img {
         -o-object-position: top;
            object-position: top;
       }
-      .image-focus-bottom img {
+      body.image-focus-bottom .image img {
         -o-object-position: bottom;
            object-position: bottom;
       }
@@ -530,7 +559,7 @@
         min-height: 33vmax;
       }
     }
-    body.has-image > header > a {
+    body.has-image:not(.image-focus-bottom) > header > a {
       position: absolute;
       bottom: 0.75em;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
@@ -707,8 +736,8 @@
 
   body > header ul,
   body > header li,
-  body > nav ul,
-  body > nav li,
+  body > nav > ul,
+  body > nav > ul > li,
   body > footer ul,
   body > footer li {
     /* @reset-list */
@@ -731,8 +760,11 @@
     vertical-align: top;
   }
 
+  body > nav {
+    text-align: center;
+  }
+
   body > nav h2 {
-    margin-top: 0;
     font-size: inherit;
     max-width: none;
     font-weight: inherit;
@@ -742,23 +774,48 @@
   }
 
   body > nav > ul {
-    text-align: left;
+    text-align: center;
+    margin-top: 0;
+    margin-left: -1.5em;
+    margin-right: -1.5em;
   }
 
-  @media (min-width: 60em) { /* --big-screen-width */
-    body > nav > ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-    }
+  body > nav > ul > li {
+    margin-bottom: 1.5em;
   }
 
+  body > nav ul,
   body > nav li {
-    text-align: left;
+    max-width: none;
+  }
+
+  body > nav > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+
+  body > nav > ul > li {
+    padding: 0 1.5em;
+    -ms-flex-preferred-size: 20em;
+        flex-basis: 20em;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+
+  body > nav h2 {
+    margin-top: 1.5em;
   }
 
   body > nav a {
@@ -780,6 +837,15 @@
     font-weight: inherit;
     line-height: inherit;
     margin-bottom: 0;
+  }
+
+  body > footer .contact {
+    text-align: center;
+  }
+
+  body > footer .contact h2,
+  body > footer .contact p {
+    max-width: none;
   }
 
   @media (min-width: 70em) {
@@ -822,14 +888,8 @@
 
   @media (min-width: 60em) { /* --big-screen-width */
     body > nav form {
-      margin-top: 6em;
+      margin-top: 3em;
     }
-  }
-
-  body > nav ul {
-    max-width: none;
-    text-align: center;
-    margin-top: 0;
   }
 
   body > footer .nav ul {
