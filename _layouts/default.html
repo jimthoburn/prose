@@ -23,7 +23,9 @@
   </header>
 
   {% if page.image %}
-  <div class="image {% if page.image_focus == 'top' %} image-focus-top {% elsif page.image_focus == 'bottom' %} image-focus-bottom {% endif %}"><img src="{{ page.image }}" alt="" /></div>
+  <div class="image {% if page.image_focus == 'top' %} image-focus-top {% elsif page.image_focus == 'bottom' %} image-focus-bottom {% endif %}">
+    <img src="{{ page.image }}" alt="" />
+  </div>
   {% endif %}
 
   <main{% if page.has_wide_content %} class="has-wide-content"{% endif %}>
@@ -36,10 +38,10 @@
       <li>
         <h2><a href="/academics">Academics</a></h2>
         <ul>
-          <li><a href="/academics/#advanced-placement--honors-courses">Advanced Placement</a>
+          <li><a href="/academics/#advanced-placement--honors-courses">Advanced Placement</a></li>
           <li><a href="/academics/#advanced-placement--honors-courses">Honors Courses</a></li>
-          <li><a href="/academics/">Pathways</a></h2>
-          <li><a href="/academics/">College-Career Prep</a></h2>
+          <li><a href="/academics/">Pathways</a></li>
+          <li><a href="/academics/">College-Career Prep</a></li>
         </ul>
       </li>
       <li>

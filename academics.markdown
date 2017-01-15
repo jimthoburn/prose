@@ -1,7 +1,7 @@
 ---
 title: Academics at Sierra High School
 layout: default
-image: "/images/photos/writing.jpg"
+image: "/images/photos/academics.jpg"
 ---
 
 <div class="text" markdown="1">

@@ -1,10 +1,8 @@
 ---
 title: Sierra High School, Bringing aspiration into reality
-classname: home
 layout: default
 has_wide_content: true
-image: "/images/photos/academics.jpg"
-image_focus: top
+image: "/images/photos/one-student.png"
 ---
 
 # Bringing aspiration <small>into</small> reality
