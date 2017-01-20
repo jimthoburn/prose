@@ -126,11 +126,13 @@ body.image-reverse main h1 {
 */
 main h1 {
   font-size: 2em;
+  font-size: 5vmax;
   margin-bottom: 3rem;
 }
 @media (min-width: 55em) {
   main h1 {
     font-size: 3em;
+    font-size: 5vmax;
   }
 }
 body.image-reverse main h1,
@@ -138,7 +140,7 @@ body.image-reverse main > p,
 body.image-reverse main > ul {
   text-align: right;
 }
-@media (min-width: 50em) {
+@media (min-width: 30em) {
   body.image-reverse main h1,
   body.image-reverse main > p,
   body.image-reverse main > ul {
