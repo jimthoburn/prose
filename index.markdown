@@ -27,8 +27,13 @@ images_reverse:
   background-position: center;
   background-size: cover;
   */
-  padding-top: 20vh;
-  min-height: 50vh;
+  padding-top: 35vh;
+  box-sizing: border-box;
+}
+@media (min-width: 60em) {
+  .image {
+    padding-top: 25vh;
+  }
 }
 .image::before,
 .image::after {
@@ -48,7 +53,12 @@ body.has-image > header {
   z-index: 9999;
 }
 body.image-reverse .image img {
-  left: 10%;
+  left: -10%;
+}
+@media (min-width: 60em) {
+  body.image-reverse .image img {
+    left: 10%;
+  }
 }
 /*
 .image:after {
@@ -76,8 +86,10 @@ body > header > a {
 }
 body > header h2,
 body > header h2 + p {
-  color: rgb(57, 164, 208); /* --light-blue */
+  color: rgb(46, 127, 182); /* --ocean */
+  text-shadow: none;
 }
+/*
 body > header h2 + p {
   text-indent: -9999px;
   overflow: hidden;
@@ -85,21 +97,55 @@ body > header h2 + p {
 body > header h2 img {
   transform: translateY(-65%);
 }
+*/
 /*
 body > main > p {
   margin-right: 50vw;
 }
 */
+/*
 main h1 {
   position: absolute;
   transform: translateY(-150%);
-  width: 50%;
+  width: 75%;
+  width: calc(75% - 1.5rem);
   font-size: 2em;
 }
 body.image-reverse main h1 {
-  margin-left: 45%;
-  margin-left: calc(45vw - 3rem);
+  right: 1.5rem;
 }
+@media (min-width: 60em) {
+  main h1 {
+    width: 50%;
+    width: calc(50% - 3rem);
+  }
+  body.image-reverse main h1 {
+    right: 3rem;
+  }
+}
+*/
+main h1 {
+  font-size: 2em;
+  margin-bottom: 3rem;
+}
+@media (min-width: 55em) {
+  main h1 {
+    font-size: 3em;
+  }
+}
+body.image-reverse main h1,
+body.image-reverse main > p,
+body.image-reverse main > ul {
+  text-align: right;
+}
+@media (min-width: 50em) {
+  body.image-reverse main h1,
+  body.image-reverse main > p,
+  body.image-reverse main > ul {
+    text-align: left;
+  }
+}
+/*
 @media (min-width: 35em) {
   main h1 {
     transform: translateY(-175%);
@@ -111,23 +157,28 @@ body.image-reverse main h1 {
     transform: translateY(-200%);
   }
 }
+*/
 main h1 + h2 {
   margin-top: 0;
 }
 
+main > h1,
 main > p,
 main > ul {
   max-width: 75%;
 }
+body.image-reverse main > h1,
 body.image-reverse main > p,
 body.image-reverse main > ul {
-  margin-left: 25%;
+  margin-left: 20%;
 }
 @media (min-width: 60em) {
+  main > h1,
   main > p,
   main > ul {
     max-width: 50%;
   }
+  body.image-reverse main > h1,
   body.image-reverse main > p,
   body.image-reverse main > ul {
     margin-left: 45%;
