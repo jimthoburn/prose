@@ -11,6 +11,13 @@ images:
 - "/images/photos/one-student-computer.png"
 - "/images/photos/one-student-microscope.png"
 - "/images/photos/one-student-science.png"
+images_reverse:
+- true
+- false
+- true
+- false
+- true
+- false
 ---
 
 <style>
@@ -20,7 +27,7 @@ images:
   background-position: center;
   background-size: cover;
   */
-  padding-top: 15vh;
+  padding-top: 20vh;
   min-height: 50vh;
 }
 .image::before,
@@ -31,10 +38,6 @@ body.has-image > header {
   height: 50vh;
   min-height: 50vh;
 }
-body.has-image > header .nav-link a {
-  background-color: white;
-  color: rgb(40, 41, 43); /* --text-color */
-}
 .image img {
   height: 100vmax;
   width: auto;
@@ -43,6 +46,9 @@ body.has-image > header .nav-link a {
   position: absolute;
   left: 50%;
   z-index: 9999;
+}
+body.image-reverse .image img {
+  left: 10%;
 }
 /*
 .image:after {
@@ -90,6 +96,10 @@ main h1 {
   width: 50%;
   font-size: 2em;
 }
+body.image-reverse main h1 {
+  margin-left: 45%;
+  margin-left: calc(45vw - 3rem);
+}
 @media (min-width: 35em) {
   main h1 {
     transform: translateY(-175%);
@@ -109,10 +119,18 @@ main > p,
 main > ul {
   max-width: 75%;
 }
+body.image-reverse main > p,
+body.image-reverse main > ul {
+  margin-left: 25%;
+}
 @media (min-width: 60em) {
   main > p,
   main > ul {
     max-width: 50%;
+  }
+  body.image-reverse main > p,
+  body.image-reverse main > ul {
+    margin-left: 45%;
   }
 }
 body {

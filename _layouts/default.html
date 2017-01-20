@@ -36,11 +36,19 @@
         '{{ image }}'{% unless forloop.last %},{% endunless %}
       {% endfor %}
     ];
+    var reverseImages = [
+      {% for reverse_boolean in page.images_reverse %}
+        '{{ reverse_boolean }}'{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
     var min = 0;
     var max = images.length - 1;
     var random = Math.floor(Math.random() * (max - min + 1) + min);
     var image = document.querySelector('.image img');
     image.src = images[random];
+    if (reverseImages[random] == 'true') {
+      document.body.className += ' image-reverse';
+    }
   })();
   </script>
   {% endif %}
