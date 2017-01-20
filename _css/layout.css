@@ -58,6 +58,18 @@
   main > h1:first-child {
     margin-top: 0;
   }
+
+  /*
+  @supports(transform: translateY(-100%)) {
+    body.has-image main > h1:first-child {
+      position: absolute;
+      transform: translateY(-100%);
+      margin-top: -3rem;
+      left: 3rem;
+    }
+  }
+  */
+
   @media (min-width: 66em) {
     /*
     main:not(.has-wide-content) > h1:first-child {
@@ -81,7 +93,7 @@
   .image::before {
     content: "";
     background: rgba(0, 0, 0, 0.2);
-    background: linear-gradient(165deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+    background: linear-gradient(165deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
     position: absolute;
     top: 0;
     left: 0;
@@ -91,13 +103,13 @@
   }
   @supports(object-fit: cover) {
     .image::before {
-      background: linear-gradient(15deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+      background: linear-gradient(15deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
     }
   }
   .image::after {
     content: "";
     background: rgba(0, 0, 0, 0.05);
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
     position: absolute;
     top: 0;
     left: 0;
@@ -125,7 +137,7 @@
       @media (min-aspect-ratio: 1/1) {
         .image img {
           height: 70vh;
-          min-height: 33vmax;
+          min-height: 30vmax;
         }
       }
       body.image-focus-top .image img {
@@ -214,7 +226,8 @@
     @media (min-aspect-ratio: 1/1) {
       body.has-image > header {
         height: 70vh;
-        min-height: 33vmax;
+        min-height: 9em;
+        min-height: 30vmax;
       }
     }
     body.has-image:not(.image-focus-bottom) > header > a {

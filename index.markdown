@@ -2,17 +2,136 @@
 title: Sierra High School, Bringing aspiration into reality
 layout: default
 has_wide_content: true
-image: "/images/photos/one-student-academics.jpg"
+image: "/images/photos/one-student-art.png"
+image_focus: bottom
 images:
-- "/images/photos/one-student-academics.jpg"
-- "/images/photos/one-student-art.jpg"
-- "/images/photos/one-student-book.jpg"
-- "/images/photos/one-student-computer.jpg"
-- "/images/photos/one-student-microscope.jpg"
-- "/images/photos/one-student-science.jpg"
+- "/images/photos/one-student-academics.png"
+- "/images/photos/one-student-art.png"
+- "/images/photos/one-student-book.png"
+- "/images/photos/one-student-computer.png"
+- "/images/photos/one-student-microscope.png"
+- "/images/photos/one-student-science.png"
 ---
 
-# Bringing aspiration <small>into</small> reality
+<style>
+.image {
+  /*
+  background-image: url(/images/background.png);
+  background-position: center;
+  background-size: cover;
+  */
+  padding-top: 15vh;
+  min-height: 50vh;
+}
+.image::before,
+.image::after {
+  display: none;
+}
+body.has-image > header {
+  height: 50vh;
+  min-height: 50vh;
+}
+body.has-image > header .nav-link a {
+  background-color: white;
+  color: rgb(40, 41, 43); /* --text-color */
+}
+.image img {
+  height: 100vmax;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  z-index: 9999;
+}
+/*
+.image:after {
+  content: "";
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 55%, rgba(255, 255, 255, 0));
+  height: 100vmax;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  top: 5vh;
+  z-index: 99999;
+}
+*/
+/*
+body > header h2,
+body > header h2 + p {
+  color: black;
+  text-shadow: none;
+}
+*/
+body > header > a {
+  margin-top: 1em;
+}
+body > header h2,
+body > header h2 + p {
+  color: rgb(57, 164, 208); /* --light-blue */
+}
+body > header h2 + p {
+  text-indent: -9999px;
+  overflow: hidden;
+}
+body > header h2 img {
+  transform: translateY(-65%);
+}
+/*
+body > main > p {
+  margin-right: 50vw;
+}
+*/
+main h1 {
+  position: absolute;
+  transform: translateY(-150%);
+  width: 50%;
+  font-size: 2em;
+}
+@media (min-width: 35em) {
+  main h1 {
+    transform: translateY(-175%);
+  }
+}
+@media (min-width: 55em) {
+  main h1 {
+    font-size: 3em;
+    transform: translateY(-200%);
+  }
+}
+main h1 + h2 {
+  margin-top: 0;
+}
+
+main > p,
+main > ul {
+  max-width: 75%;
+}
+@media (min-width: 60em) {
+  main > p,
+  main > ul {
+    max-width: 50%;
+  }
+}
+body {
+  background-color: rgb(237, 237, 239);
+}
+.staff-list {
+  margin-top: 3em;
+  padding: 1px 3em 3em 3em;
+  margin-left: -3em;
+  margin-right: -3em;
+  background-color: white;
+}
+.summaries {
+  margin-top: 0;
+  background-color: white;
+}
+</style>
+
+# Bringing aspiration <small>into</small>&nbsp;reality
 
 Sierra High School is a place where students have a second opportunity to achieve academic success. To bring this aspiration into reality we:
 
