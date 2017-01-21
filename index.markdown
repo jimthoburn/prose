@@ -191,10 +191,18 @@ body {
 }
 .staff-list {
   margin-top: 3em;
-  padding: 1px 3em 3em 3em;
-  margin-left: -3em;
-  margin-right: -3em;
+  padding: 1px 1.5em 3em 1.5em;
+  margin-left: -1.5em;
+  margin-right: -1.5em;
   background-color: white;
+}
+@media (min-width: 60em) {
+  .staff-list {
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-left: -3em;
+    margin-right: -3em;
+  }
 }
 .summaries {
   margin-top: 0;
