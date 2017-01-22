@@ -50,7 +50,7 @@ image: "/images/photos/academics.jpg"
 
 * AP Government <small>(Coming Next Year)</small>
 
-## Pathway Programs / College-Career Preparatory Courses
+## Pathway Programs & <span class="avoid-break">College-Career Preparatory Courses</span>
 
 * Administration of Justice/Law
 * ASL - American Sign language

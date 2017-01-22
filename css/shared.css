@@ -86,6 +86,7 @@
 
   h1,
   body > header h2,
+  body > nav    h2,
   body > footer h2 {
     text-transform: uppercase;
     font-family: "Roboto Slab", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
@@ -94,8 +95,26 @@
 
   h1 strong,
   body > header h2 strong,
+  body > nav    h2 strong,
   body > footer h2 strong {
     font-weight: 400;
+  }
+
+  @media (min-width: 45em), (min-height: 45em) {
+    main h1 {
+      font-size: 5vmax;
+    }
+  }
+
+  /*
+  h1 .lowercase {
+    text-transform: lowercase;
+    font-weight: 400;
+  }
+  */
+
+  .avoid-break {
+    display: inline-block;
   }
 
   h1 {
@@ -201,6 +220,8 @@
   dt {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding-top: 0.375em;
+    padding-bottom: 0.375em;
+    padding-left: 1.5em;
   }
 
   dd {
@@ -409,7 +430,6 @@
 
   .image {
     position: relative;
-    z-index: -1;
   }
 
   .image::before {
@@ -469,7 +489,7 @@
       @media (min-aspect-ratio: 1/1) {
         .image img {
           height: 70vh;
-          min-height: 30vmax;
+          min-height: 40vmax;
         }
       }
       body.image-focus-top .image img {
@@ -542,21 +562,25 @@
 
   body > header {
     padding-top: 4.5em;
+    /*
+    overflow: hidden;
+    */
   }
 
   @media (min-width: 35em) {
     body > header {
-      padding-top: 0;
+      padding-top: 1.5em;
       padding-bottom: 0;
     }
   }
 
-  body header > a {
+  body > header > a {
     display: block;
     color: inherit;
     text-decoration: inherit;
     position: relative;
-    padding: 1.5em 1.5em 1.5em 5.25em;
+    padding: 1.5em 0 1.5em 5.25em;
+    z-index: 1;
   }
 
   @supports ((-o-object-fit: cover) or (object-fit: cover)) {
@@ -568,7 +592,7 @@
       body.has-image > header {
         height: 70vh;
         min-height: 9em;
-        min-height: 30vmax;
+        min-height: 40vmax;
       }
     }
     body.has-image:not(.image-focus-bottom) > header > a {
@@ -644,7 +668,6 @@
 
   body > header h2 + p {
     font-style: italic;
-    opacity: 0.75;
   }
 
   /*
@@ -656,6 +679,7 @@
   body > header .nav-link {
     margin: 0;
     position: absolute;
+    z-index: 1;
     top: 1.5em;
     right: 1.5em;
   }
@@ -779,10 +803,7 @@
   body > nav h2 {
     font-size: inherit;
     max-width: none;
-    font-weight: inherit;
-    text-transform: none;
-    font-family: inherit;
-    font-weight: bold;
+    font-weight: 400;
   }
 
   body > nav > ul {
@@ -1039,7 +1060,7 @@
     }
   }
 
-  @media (min-width: 60em) {
+  @media (min-width: 120em) {
     .summaries {
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;

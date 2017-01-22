@@ -32,7 +32,7 @@ images_reverse:
 }
 @media (min-width: 60em) {
   .image {
-    padding-top: 25vh;
+    padding-top: 35vh;
   }
 }
 .image::before,
@@ -195,6 +195,8 @@ body {
   margin-left: -1.5em;
   margin-right: -1.5em;
   background-color: white;
+  position: relative;
+  z-index: 99999;
 }
 @media (min-width: 60em) {
   .staff-list {
@@ -210,7 +212,7 @@ body {
 }
 </style>
 
-# Bringing aspiration <small>into</small>&nbsp;reality
+# Bringing aspiration into&nbsp;reality
 
 Sierra High School is a place where students have a second opportunity to achieve academic success. To bring this aspiration into reality we:
 

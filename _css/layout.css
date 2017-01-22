@@ -88,7 +88,6 @@
   ----------------------------------------------- */
   .image {
     position: relative;
-    z-index: -1;
   }
   .image::before {
     content: "";
@@ -137,7 +136,7 @@
       @media (min-aspect-ratio: 1/1) {
         .image img {
           height: 70vh;
-          min-height: 30vmax;
+          min-height: 40vmax;
         }
       }
       body.image-focus-top .image img {
@@ -204,19 +203,23 @@
   }
   body > header {
     padding-top: 4.5em;
+    /*
+    overflow: hidden;
+    */
   }
   @media (min-width: 35em) {
     body > header {
-      padding-top: 0;
+      padding-top: 1.5em;
       padding-bottom: 0;
     }
   }
-  body header > a {
+  body > header > a {
     display: block;
     color: inherit;
     text-decoration: inherit;
     position: relative;
-    padding: 1.5em 1.5em 1.5em 5.25em;
+    padding: 1.5em 0 1.5em 5.25em;
+    z-index: 1;
   }
   @supports (object-fit: cover) {
     body.has-image > header {
@@ -227,7 +230,7 @@
       body.has-image > header {
         height: 70vh;
         min-height: 9em;
-        min-height: 30vmax;
+        min-height: 40vmax;
       }
     }
     body.has-image:not(.image-focus-bottom) > header > a {
@@ -295,7 +298,6 @@
   }
   body > header h2 + p {
     font-style: italic;
-    opacity: 0.75;
   }
   /*
   body > header {
@@ -305,6 +307,7 @@
   body > header .nav-link {
     margin: 0;
     position: absolute;
+    z-index: 1;
     top: calc(var(--line-height) * 1);
     right: calc(var(--line-height) * 1);
   }
@@ -409,10 +412,7 @@
   body > nav h2 {
     font-size: inherit;
     max-width: none;
-    font-weight: inherit;
-    text-transform: none;
-    font-family: inherit;
-    font-weight: bold;
+    font-weight: 400;
   }
   body > nav > ul {
     text-align: center;
