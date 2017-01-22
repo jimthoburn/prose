@@ -64,7 +64,7 @@ body > .image {
   background-color: rgb(244, 209, 81); /* --gold */
   background-color: rgb(237, 237, 239);
   height: 25em;
-  min-height: 65vh;
+  min-height: 85vh;
   /*
   transform: skew(0, -2deg) translate(0, -5vh);
   */
@@ -78,19 +78,31 @@ body > .image::before,
 body > .image::after {
   display: none;
 }
-body.has-image > header {
-  height: 65vh;
-  min-height: 65vh;
-}
 .image img {
-  height: 100vmax;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
+  height: auto;
+  width: 50%;
   position: absolute;
-  top: 10vh;
-  left: 55%;
+  top: 15vh;
+  right: -10%;
   z-index: 9999;
+}
+@media (min-width: 35em) {
+  body > .image {
+    height: 25em;
+    min-height: 65vh;
+  }
+  main > h2,
+  main > p,
+  main > ul {
+    margin-right: 35%;
+  }
+}
+@media (min-aspect-ratio: 1/1) {
+  .image img {
+    height: 100vmax;
+    width: auto;
+    right: 0;
+  }
 }
 /*
 body > header h2,
