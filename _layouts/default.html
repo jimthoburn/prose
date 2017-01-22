@@ -23,9 +23,18 @@
   </header>
 
   {% if page.image %}
-  <div class="image">
-    <img src="{{ page.image }}" alt="" />
-  </div>
+    <div class="image">
+
+    {% if page.image_portrait %}
+      <picture>
+        <source srcset="{{ page.image_portrait }}" media="(max-aspect-ratio: 1/1)" />
+        <img src="{{ page.image }}" alt="" />
+      </picture>
+    {% else %}
+      <img src="{{ page.image }}" alt="" />
+    {% endif %}
+
+    </div>
   {% endif %}
 
   {% if page.images %}
