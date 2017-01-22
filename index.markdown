@@ -21,6 +21,181 @@ images_reverse:
 ---
 
 <style>
+/*
+body > main::before {
+  content: "";
+  background-color: white;
+  height: 1.5em;
+  width: 120%;
+  margin-top: -2.25em;
+  position: absolute;
+  z-index: 3;
+  left: -10%;
+  transform: rotate(-2deg);
+}
+  @media (min-width: 60em) {
+    body > main::before {
+      margin-top: -4.5em;
+      height: 3em;
+    }
+  }
+
+*/
+body {
+  background-color: rgb(244, 209, 81); /* --gold */
+  background-color: rgb(237, 237, 239);
+}
+body > main::before,
+body > main {
+  background-color: rgb(244, 209, 81); /* --gold */
+  background-color: rgb(237, 237, 239);
+}
+/*
+body > .image {
+  background-color: rgb(237, 237, 239);
+  background-image: url(/images/athletics.jpg);
+  background-position: center;
+  background-size: cover;
+}
+*/
+body > .image {
+  background-color: rgb(46, 127, 182); /* --ocean */
+  background-color: white;
+  background-color: rgb(244, 209, 81); /* --gold */
+  background-color: rgb(237, 237, 239);
+  height: 25em;
+  min-height: 65vh;
+  transform: skew(0, -2deg) translate(0, -5vh);
+}
+body > .image img {
+  transform: skew(0, 2deg) translate(0, 5vh);
+}
+body > .image::before,
+body > .image::after {
+  display: none;
+}
+body.has-image > header {
+  height: 65vh;
+  min-height: 65vh;
+}
+.image img {
+  height: 100vmax;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 10vh;
+  left: 55%;
+  z-index: 9999;
+}
+/*
+body > header h2,
+body > header h2 + p {
+  color: black;
+  text-shadow: none;
+}
+body > header > a {
+  margin-top: 1em;
+}
+*/
+body > header h2,
+body > header h2 + p {
+  color: rgb(244, 209, 81); /* --gold */
+  color: white;
+  color: rgb(46, 127, 182); /* --ocean */
+  text-shadow: none;
+}
+body > header h2 img {
+  transform: translateY(-65%);
+}
+/*
+body > main > p {
+  margin-right: 50vw;
+}
+*/
+main h1 {
+  position: absolute;
+  z-index: 3;
+  max-width: 50vw;
+  transform: translate(0, -100%);
+  margin-top: -1.5rem;
+  color: rgb(244, 209, 81); /* --gold */
+  color: white;
+  color: rgb(46, 127, 182); /* --ocean */
+}
+/*
+@media (min-width: 50em) {
+  main h1 {
+    font-size: 3em;
+  }
+}
+@media (min-width: 75em) {
+  main h1 {
+    font-size: 4em;
+  }
+}
+*/
+main h1 + h2,
+main h1 + p {
+  margin-top: 0;
+}
+figure {
+  margin-top: 1.5em;
+  margin-left: -4.5em;
+  margin-right: -4.5em;
+  margin-bottom: -4.5em;
+  max-width: none;
+  position: relative;
+  z-index: 99999;
+  transform: rotate(-2deg);
+  overflow: hidden;
+  background: rgb(51, 51, 51);
+}
+@media (min-width: 60em) {
+  figure {
+    margin-bottom: -7.5em;
+  }
+}
+figure img {
+  width: 100%;
+  height: auto;
+  max-width: none;
+  transform: rotate(2deg) scale(1.125);
+}
+/*
+figure {
+  transform: rotate(-5deg) scale(0.85) translate(-6em, 0);
+  margin-top: 1.5em;
+  margin-bottom: 3em;
+}
+figure img {
+  transform: rotate(5deg) scale(1.15);
+}
+*/
+.staff-list {
+  margin-top: 3em;
+  padding: 1px 1.5em 3em 1.5em;
+  margin-left: -1.5em;
+  margin-right: -1.5em;
+  background-color: white;
+  position: relative;
+  z-index: 99999;
+}
+@media (min-width: 60em) {
+  .staff-list {
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-left: -3em;
+    margin-right: -3em;
+  }
+}
+.summaries {
+  margin-top: 0;
+  background-color: white;
+}
+</style>
+
+<style media="false">
 .image {
   /*
   background-image: url(/images/background.png);
