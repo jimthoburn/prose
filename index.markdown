@@ -63,11 +63,11 @@ body > .image {
   background-color: white;
   background-color: rgb(244, 209, 81); /* --gold */
   background-color: rgb(237, 237, 239);
-  height: 25em;
-  min-height: 85vh;
   /*
   transform: skew(0, -2deg) translate(0, -5vh);
   */
+  height: 10em;
+  min-height: 65vh;
 }
 /*
 body > .image img {
@@ -78,32 +78,106 @@ body > .image::before,
 body > .image::after {
   display: none;
 }
-.image img {
+body > .image img {
   height: auto;
   width: 50%;
   position: absolute;
-  top: 15vh;
-  right: -10%;
+  top: 30vh;
+  right: -2.25em;
   z-index: 9999;
 }
-@media (min-width: 35em) {
-  body > .image {
-    height: 25em;
-    min-height: 65vh;
+
+body.image-reverse > .image img {
+  left: 0.75em;
+}
+@media (min-width: 60em) {
+  body.image-reverse > .image img {
+  lefteft: 3em;
   }
-  main > h2,
-  main > p,
-  main > ul {
-    margin-right: 35%;
+}
+
+body > main > div:first-of-type {
+  background: white;
+  position: relative;
+  z-index: 9999999999;
+  padding: 1.5em 1.5em 0;
+  margin: 0 -1.5em -3em;
+}
+@media (min-width: 60em) {
+  body > main > div:first-of-type {
+    padding: 3em 3em 0;
+    margin-left: -3em;
+    margin-right: -3em;
+    margin-bottom: -3em;
   }
+}
+body > main > div:first-of-type p:first-child {
+  margin-top: 0;
+}
+body.image-reverse main h1 {
+  left: auto;
+  right: 1.5rem;
+  max-width: none;
+  text-align: right;
+  margin-left: 50vw;
 }
 @media (min-aspect-ratio: 1/1) {
-  .image img {
-    height: 100vmax;
-    width: auto;
-    right: 0;
+  body > .image {
+    height: 65vh;
+    min-height: 65vh;
+  }
+  body > .image img {
+    top: 30vh;
+  }
+  body > .image img {
+    width: 40vw;
+    height: auto;
+    right: -3em;
+  }
+  body > main > div:first-of-type {
+    background: transparent;
+    position: static;
+    padding: 0;
+    margin: 0;
+    margin-right: 35%;
+  }
+  body.image-reverse main h1 {
+    margin-left: 0;
+    left: 50vw;
+    right: auto;
+    margin-right: 3rem;
+    text-align: left;
+  }
+  body.image-reverse > main > div:first-of-type {
+    margin-right: 0;
+    margin-left: 50vw;
+    margin-left: calc(50vw - 1.5em);
+  }
+  @media (min-width: 60em) {
+    body.image-reverse > main > div:first-of-type {
+      margin-left: calc(50vw - 3em);
+    }
   }
 }
+/*
+@media (min-width: 35em) {
+  body.image-reverse main h1 {
+    margin-left: 0;
+    left: 50vw;
+    right: auto;
+    margin-right: 3rem;
+    text-align: left;
+  }
+  body.image-reverse main > div:first-of-type p,
+  body.image-reverse main > div:first-of-type ul {
+    max-width: none;
+    margin-left: 50vw;
+    margin-left: calc(50vw - 3em);
+    margin-right: 0;
+  }
+}
+*/
+
 /*
 body > header h2,
 body > header h2 + p {
@@ -208,6 +282,8 @@ figure img {
 .summaries {
   margin-top: 0;
   background-color: white;
+  position: relative;
+  z-index: 99999;
 }
 </style>
 
@@ -403,7 +479,9 @@ body {
 }
 </style>
 
-# Bringing aspiration into&nbsp;reality
+# Bringing aspiration <span class="avoid-break"><span class="lowercase">into</span> reality</span>
+
+<div markdown="1">
 
 Sierra High School is a place where students have a second opportunity to achieve academic success. To bring this aspiration into reality we:
 
@@ -412,6 +490,8 @@ Sierra High School is a place where students have a second opportunity to achiev
 *   foster independent thinking in a safe environment
 
 Learn more [about our school](/about)
+
+</div>
 
 <div class="staff-list">
   <h2>Our Teachers</h2>
