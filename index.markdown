@@ -193,6 +193,7 @@ body > header h2 + p {
   color: rgb(244, 209, 81); /* --gold */
   color: white;
   color: rgb(46, 127, 182); /* --ocean */
+  color: rgb(40, 41, 43); /* --tungsten */
   text-shadow: none;
 }
 body > header h2 img {
