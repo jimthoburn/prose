@@ -65,11 +65,15 @@ body > .image {
   background-color: rgb(237, 237, 239);
   height: 25em;
   min-height: 65vh;
+  /*
   transform: skew(0, -2deg) translate(0, -5vh);
+  */
 }
+/*
 body > .image img {
   transform: skew(0, 2deg) translate(0, 5vh);
 }
+*/
 body > .image::before,
 body > .image::after {
   display: none;
