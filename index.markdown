@@ -20,7 +20,6 @@ images_reverse:
 - false
 ---
 
-
 <style>
 /*
 body > main::before {
