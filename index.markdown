@@ -106,11 +106,11 @@ body > main > div:first-of-type {
   margin: 0 -1.5em -3em;
   background: rgb(46, 127, 182); /* --ocean */
   color: white;
+  /*
   background-image: url(/images/aztec-pattern.svg), url(/images/aztec-pattern.svg);
   background-position: top, bottom;
   background-size: auto 1.5em;
   background-repeat: repeat-x;
-  /*
   background-image: url(/images/aztec-circle.png);
   background-position: top;
   background-size: 100% 100%;
@@ -131,10 +131,12 @@ body > main > div:first-of-type {
   */
 
   /*Chrome,Safari*/
+  /*
   -webkit-clip-path: polygon(0 0,100% 25%,100% 100%,0 100%);
   margin-top: -3em;
   padding-top: 3em !important;
   padding-bottom: 1.5em !important;
+  */
 }
 @media (min-width: 60em) {
   body > main > div:first-of-type {
@@ -142,6 +144,30 @@ body > main > div:first-of-type {
     padding-bottom: 3em !important;
   }
 }
+
+body > main > div:first-of-type::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 70vh;
+  min-height: 40vmax;
+  width: 70vh;
+  min-width: 40vmax;
+  top: 0;
+  left: 0;
+  background: rgb(32, 85, 135); /* --dark-ocean */
+  /*
+  border: 0.25em solid white;
+  */
+  transform: translate(-100%, -50%) rotate(-45deg);
+  box-shadow:
+    0.25em 0.25em 0 rgb(46, 127, 182), /* --ocean */
+    0.75em 0.75em 0 rgb(32, 85, 135), /* --dark-ocean */
+    1.25em 1.25em 0 white,
+    1.75em 1.75em 0 rgb(32, 85, 135), /* --dark-ocean */
+    2.25em 2.25em 0 rgb(46, 127, 182); /* --ocean */
+}
+
 body > main > div:first-of-type > * {
 }
 body > main > div:first-of-type p a {
