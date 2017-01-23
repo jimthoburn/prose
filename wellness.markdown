@@ -1,10 +1,10 @@
 ---
 title: Support and Wellness Programs at Sierra High School
-layout: default
 image: "/images/photos/lunch.jpg"
+layout: default
 ---
 
-# Support And Wellness Programs
+# Support <span class="lowercase">and<span> Wellness Programs
 
 Intervention Programs
 : After School Tutoring
