@@ -138,14 +138,17 @@ body > main > div:first-of-type {
   padding-bottom: 1.5em !important;
   */
 }
+/*
 @media (min-width: 60em) {
   body > main > div:first-of-type {
-    padding-top: 6em !important;
+    padding-top: 3em !important;
     padding-bottom: 3em !important;
   }
 }
+*/
 
-body > main > div:first-of-type::before {
+body > main > div:first-of-type::before,
+body > main > div:first-of-type::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -159,13 +162,18 @@ body > main > div:first-of-type::before {
   /*
   border: 0.25em solid white;
   */
-  transform: translate(-100%, -50%) rotate(-45deg);
+  transform: translate(-110%, -46%) rotate(-45deg);
   box-shadow:
     0.25em 0.25em 0 rgb(46, 127, 182), /* --ocean */
     0.75em 0.75em 0 rgb(32, 85, 135), /* --dark-ocean */
     1.25em 1.25em 0 white,
     1.75em 1.75em 0 rgb(32, 85, 135), /* --dark-ocean */
     2.25em 2.25em 0 rgb(46, 127, 182); /* --ocean */
+}
+body > main > div:first-of-type::after {
+  transform: translate(110%, -2%) rotate(-225deg);
+  left: auto;
+  right: 0;
 }
 
 body > main > div:first-of-type > * {

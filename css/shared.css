@@ -1560,7 +1560,7 @@
   }
 
   body > header .nav-link a {
-    padding: 2em 3em;
+    padding: 4.5em;
     border-radius: 0;
     /*
     background-image: url(/images/texture-parallel.png);
@@ -1578,21 +1578,20 @@
     */
   }
 
-  @media (min-width: 60em) { /* --big-screen-width */
-    body > header .nav-link a {
-      padding: 2.5em 3.5em;
-    }
-  }
-
   body > header .nav-link a {
-    -webkit-transform: skew(-25deg, 25deg);
-            transform: skew(-25deg, 25deg);
+    -webkit-transform: rotate(45deg) translate(-37.5%, -50%);
+            transform: rotate(45deg) translate(-37.5%, -50%);
   }
 
   body > header .nav-link a span {
     display: block;
-    -webkit-transform: skew(25deg, -25deg) translate(-0.75em, 0.125em);
-            transform: skew(25deg, -25deg) translate(-0.75em, 0.125em);
+    -webkit-transform: rotate(-45deg) translate(0.375em, 4.25em);
+            transform: rotate(-45deg) translate(0.375em, 4.25em);
+  }
+
+  @media (min-width: 60em) { /* --big-screen-width */
+    body > header .nav-link a {
+    }
   }
 
   /*
