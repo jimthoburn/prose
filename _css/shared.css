@@ -53,7 +53,7 @@
     transform: skew(25deg, -25deg) translate(-0.75em, 0.125em);
   }
 
-
+  /*
   body > main {
     padding-top: 2.25em;
   }
@@ -94,5 +94,27 @@
       margin-top: -3em;
     }
   }
+  */
 
+  .image::before {
+    content: "";
+    position: absolute;
+    height: 70vh;
+    min-height: 40vmax;
+    width: 70vh;
+    min-width: 40vmax;
+    top: 0;
+    left: 0;
+    background: var(--dark-ocean);
+    /*
+    border: 0.25em solid white;
+    */
+    transform: translate(-100%, 0) rotate(-45deg);
+    box-shadow:
+      0.25em 0.25em 0 var(--ocean),
+      0.75em 0.75em 0 var(--dark-ocean),
+      1.25em 1.25em 0 white,
+      1.75em 1.75em 0 var(--dark-ocean),
+      2.25em 2.25em 0 var(--ocean);
+  }
 
