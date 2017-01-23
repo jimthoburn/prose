@@ -10,3 +10,45 @@
   @import url(layout.css);
   @import url(staff.css);
   @import url(home.css);
+
+  body > header {
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+  body > header .nav-link {
+    font-weight: bold;
+    z-index: 9999;
+    top: -1.5em;
+    right: -2em;
+  }
+  body > header .nav-link a {
+    padding: 2em 3em;
+    border-radius: 0;
+    /*
+    background-image: url(/images/texture-parallel.png);
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    */
+  }
+  body > header .nav-link a:hover,
+  body > header .nav-link a:active,
+  body > header .nav-link a:focus {
+    /*
+    background-image: url(/images/texture-parallel-black.png);
+    */
+  }
+  @media (min-width: 60em) { /* --big-screen-width */
+    body > header .nav-link a {
+      padding: 2.5em 3.5em;
+    }
+  }
+  body > header .nav-link a {
+    transform: skew(-25deg, 25deg);
+  }
+  body > header .nav-link a span {
+    display: block;
+    transform: skew(25deg, -25deg) translate(-0.75em, 0.125em);
+  }
