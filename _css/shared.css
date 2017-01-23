@@ -52,3 +52,47 @@
     display: block;
     transform: skew(25deg, -25deg) translate(-0.75em, 0.125em);
   }
+
+
+  body > main {
+    padding-top: 2.25em;
+  }
+  body > main::before {
+    content: "";
+    border-top: 0.25em solid var(--dark-ocean);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-top: -2.25em;
+    transform: translate(0, -100%);
+  }
+  @media (min-width: 60em) {
+    body > main {
+      padding-top: 3em;
+    }
+    body > main::before {
+      margin-top: -3em;
+    }
+  }
+
+  body > nav {
+    padding-top: 2.25em;
+  }
+  body > nav::before {
+    content: "";
+    border-top: 0.25em solid var(--dark-ocean);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-top: -2.25em;
+  }
+  @media (min-width: 60em) {
+    body > nav {
+      padding-top: 3em;
+    }
+    body > nav::before {
+      margin-top: -3em;
+    }
+  }
+
+

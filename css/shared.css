@@ -1582,4 +1582,52 @@
             transform: skew(25deg, -25deg) translate(-0.75em, 0.125em);
   }
 
+  body > main {
+    padding-top: 2.25em;
+  }
+
+  body > main::before {
+    content: "";
+    border-top: 0.25em solid rgb(32, 85, 135);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-top: -2.25em;
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+  }
+
+  @media (min-width: 60em) {
+    body > main {
+      padding-top: 3em;
+    }
+    body > main::before {
+      margin-top: -3em;
+    }
+  }
+
+  body > nav {
+    padding-top: 2.25em;
+  }
+
+  body > nav::before {
+    content: "";
+    border-top: 0.25em solid rgb(32, 85, 135);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-top: -2.25em;
+  }
+
+  @media (min-width: 60em) {
+    body > nav {
+      padding-top: 3em;
+    }
+    body > nav::before {
+      margin-top: -3em;
+    }
+  }
+
+
+
 /*# sourceMappingURL=shared.css.map */

@@ -131,14 +131,14 @@ body > main > div:first-of-type {
   */
 
   /*Chrome,Safari*/
-  -webkit-clip-path: polygon(0 0,16.6666666667% 5%,33.3333333334% 0,50% 5%,66.6666666668% 0,83.3333333335% 5%,100% 0,100% 100%,0 100%);
+  -webkit-clip-path: polygon(0 0,100% 25%,100% 100%,0 100%);
   margin-top: -3em;
-  padding-top: 1.5em !important;
+  padding-top: 3em !important;
   padding-bottom: 1.5em !important;
 }
 @media (min-width: 60em) {
   body > main > div:first-of-type {
-    padding-top: 3em !important;
+    padding-top: 6em !important;
     padding-bottom: 3em !important;
   }
 }
@@ -243,6 +243,11 @@ body > header > a {
   margin-right: auto;
   padding-left: 0;
   padding-right: 0;
+}
+@media (min-width: 60em) {
+  body > header > a {
+    margin-top: -2.25em;
+  }
 }
 body > header h2 img {
   display: block;
