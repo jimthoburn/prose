@@ -108,7 +108,6 @@ body > main > div:first-of-type {
   background-color: rgb(237, 237, 239);
   background-color: rgb(245, 245, 245);
   background-color: rgb(244, 209, 81); /* --gold */
-  color: rgb(46, 127, 182); /* --ocean */
   background: transparent;
   background: white;
   /*
@@ -188,9 +187,6 @@ body > main > div:first-of-type::after {
 }
 
 body > main > div:first-of-type > * {
-}
-body > main > div:first-of-type p a {
-  color: inherit;
 }
 body > main > div:first-of-type p {
     text-align: center;
