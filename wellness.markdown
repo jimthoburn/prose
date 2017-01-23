@@ -4,7 +4,7 @@ image: "/images/photos/lunch.jpg"
 layout: default
 ---
 
-# Support <span class="lowercase">and<span> Wellness Programs
+# Support <span class="lowercase">and</span> Wellness Programs
 
 Intervention Programs
 : After School Tutoring
