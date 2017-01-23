@@ -3,8 +3,11 @@
   ----------------------------------------------- */
 
   .announcements {
+    padding-top: 2.25em;
+    padding-bottom: 2.25em;
     margin-left: -1.5em;
     margin-right: -1.5em;
+    background: white;
   }
   @media (min-width: 60em) { /* --big-screen-width */
     .announcements {
@@ -24,7 +27,7 @@
   }
   .announcements header,
   .announcements li {
-    padding: 1.5em;
+    padding: 1.5em 1.5em;
   }
   @media (min-width: 60em) { /* --big-screen-width */
     .announcements header,
@@ -44,6 +47,7 @@
     border-width: 0;
   }
 
+  /*
   .announcements li:nth-child(2n) {
     background-color: rgba(0, 0, 0, 0.025);
   }
@@ -51,6 +55,7 @@
   .announcements li:nth-child(3n) {
     background-color: rgba(0, 0, 0, 0.05);
   }
+  */
 
   .announcements li h3 {
     margin-top: 0;

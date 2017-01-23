@@ -102,10 +102,15 @@ body > main > div:first-of-type {
   background: white;
   position: relative;
   z-index: 9999999999;
-  padding: 3em 1.5em;
+  padding: 1.5em 1.5em;
   margin: 0 -1.5em -3em;
   background: rgb(46, 127, 182); /* --ocean */
-  color: white;
+  background-color: rgb(237, 237, 239);
+  background-color: rgb(245, 245, 245);
+  background-color: rgb(244, 209, 81); /* --gold */
+  color: rgb(46, 127, 182); /* --ocean */
+  background: transparent;
+  background: white;
   /*
   background-image: url(/images/aztec-pattern.svg), url(/images/aztec-pattern.svg);
   background-position: top, bottom;
@@ -162,7 +167,7 @@ body > main > div:first-of-type::after {
   /*
   border: 0.25em solid white;
   */
-  transform: translate(-110%, -46%) rotate(-45deg);
+  transform: translate(-110%, -65%) rotate(-45deg);
   box-shadow:
     0.25em 0.25em 0 rgb(46, 127, 182), /* --ocean */
     0.75em 0.75em 0 rgb(32, 85, 135), /* --dark-ocean */
@@ -170,8 +175,14 @@ body > main > div:first-of-type::after {
     1.75em 1.75em 0 rgb(32, 85, 135), /* --dark-ocean */
     2.25em 2.25em 0 rgb(46, 127, 182); /* --ocean */
 }
+body.image-reverse  > main > div:first-of-type::before {
+  transform: translate(110%, -65%) rotate(-225deg);
+  left: auto;
+  right: 0;
+}
 body > main > div:first-of-type::after {
-  transform: translate(110%, -2%) rotate(-225deg);
+  display: none;
+  transform: translate(90%, -35%) rotate(-225deg);
   left: auto;
   right: 0;
 }
