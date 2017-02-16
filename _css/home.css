@@ -37,12 +37,13 @@
       flex-basis: 50%;
     }
   }
-  .summaries .facilities-summary {
-    background-color: white;
-  }
   .summaries .parents-summary {
-    background-color: rgb(238, 238, 238); /* @seashell */
-    background-color: rgba(0, 0, 0, 0.025);
+    background-color: var(--headline-color);
+    color: white;
+  }
+  .summaries .parents-summary h2,
+  .summaries .parents-summary a {
+    color: inherit;
   }
   .summaries div h2,
   .parents-summary h2,

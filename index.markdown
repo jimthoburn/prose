@@ -99,7 +99,6 @@ body > main::before {
   display: none;
 }
 body > main > div:first-of-type {
-  background: white;
   position: relative;
   z-index: 9999999999;
   padding: 1.5em 1.5em;
@@ -110,6 +109,9 @@ body > main > div:first-of-type {
   background-color: rgb(244, 209, 81); /* --gold */
   background: transparent;
   background: white;
+  background: rgb(248, 248, 248);
+  background: rgb(46, 127, 182); /* --ocean */
+  color: white;
   /*
   background-image: url(/images/aztec-pattern.svg), url(/images/aztec-pattern.svg);
   background-position: top, bottom;
@@ -150,6 +152,9 @@ body > main > div:first-of-type {
   }
 }
 */
+body > main > div:first-of-type a {
+  color: inherit;
+}
 
 body > main > div:first-of-type::before,
 body > main > div:first-of-type::after {

@@ -325,13 +325,21 @@
     margin: 0;
   }
 
-  .announcements header,
+  .announcements header {
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
   .announcements li {
-    padding: 1.5em 1.5em;
+    padding: 1.5em;
   }
 
   @media (min-width: 60em) { /* --big-screen-width */
-    .announcements header,
+    .announcements header {
+    padding-left: 3em;
+    padding-right: 3em;
+    }
     .announcements li {
       padding: 3em;
     }
@@ -345,8 +353,7 @@
     margin: 0;
   }
 
-  .announcements li {
-    background-color: rgba(0, 0, 0, 0.0);
+  .announcements li:first-child {
     border-width: 0;
   }
 
@@ -362,6 +369,10 @@
 
   .announcements li h3 {
     margin-top: 0;
+  }
+
+  .announcements li p:last-child {
+    margin-bottom: 0;
   }
 
   /* =Layout
@@ -1154,13 +1165,14 @@
     }
   }
 
-  .summaries .facilities-summary {
-    background-color: white;
+  .summaries .parents-summary {
+    background-color: rgb(46, 127, 182);
+    color: white;
   }
 
-  .summaries .parents-summary {
-    background-color: rgb(238, 238, 238); /* @seashell */
-    background-color: rgba(0, 0, 0, 0.025);
+  .summaries .parents-summary h2,
+  .summaries .parents-summary a {
+    color: inherit;
   }
 
   .summaries div h2,
