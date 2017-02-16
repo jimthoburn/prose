@@ -1664,6 +1664,14 @@
     }
   }
 
+  /* SHIM: Prevent horizontal scrollbars */
+
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
   /*
   body > main {
     padding-top: 2.25em;
@@ -1728,6 +1736,5 @@
       1.75em 1.75em 0 rgb(32, 85, 135),
       2.25em 2.25em 0 rgb(46, 127, 182);
   }
-
 
 /*# sourceMappingURL=shared.css.map */
