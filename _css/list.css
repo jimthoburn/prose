@@ -8,24 +8,10 @@
     padding-left: 0;
   }
   ul > li {
-    /*
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    */
     padding: 0.375em 1.5em;
     box-sizing: border-box;
   }
-  /*
-  ul > li::before {
-    content: "";
-    width: 0.375em;
-    height: 0.375em;
-    background-color: var(--headline-color);
-    border-radius: 50%;
-    position: absolute;
-    margin-left: -1em;
-    margin-top: 0.5625em;
-  }
-  */
   ul > li ul {
     margin-top: 0.375em;
     margin-bottom: -0.375em;

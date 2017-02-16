@@ -41,6 +41,41 @@
     height: auto;
   }
 
+  .staff-list li > p:first-child {
+    position: relative;
+    padding-bottom: 100%;
+  }
+  .staff-list li > p:first-child img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .staff-list li > p:first-child .avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .staff-list li > p:first-child .avatar > span {
+    width: 100%;
+    height: 100%;
+    background-color: var(--headline-color);
+    color: white;
+  }
+  .staff-list li > p:first-child .avatar *[data-content]:after {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    margin-top: -0.5em;
+    line-height: 1;
+    font-size: 10vw;
+  }
+
   .staff-list li h3,
   .staff-list li p {
     max-width: none;
@@ -50,7 +85,8 @@
     font-family: inherit;
     font-size: inherit;
   }
-  .staff-list li p.title {
+
+  .staff-list li h3 + p { /* title */
     font-style: italic;
     opacity: 0.6;
     margin: 0;

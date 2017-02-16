@@ -55,6 +55,15 @@
     margin-right: auto;
   }
 
+  /*
+  @media (min-width: 60em) {
+    main:not(.has-wide-content) .staff-list {
+      margin-left: calc(-50vw + 23em);
+      margin-right: calc(-50vw + 23em);
+    }
+  }
+  */
+
   main > h1:first-child {
     margin-top: 0;
   }
@@ -202,7 +211,7 @@
     margin: 0;
   }
   body > header {
-    padding-top: 4.5em;
+    padding-top: 3em;
     /*
     overflow: hidden;
     */
@@ -395,6 +404,10 @@
     padding: 0;
     border-width: 0;
     font-style: inherit;
+  }
+  body > nav ul,
+  body > nav li {
+    border-width: 0;
   }
   body > nav ul,
   body > nav li ul {

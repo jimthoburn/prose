@@ -1,0 +1,12 @@
+
+  /* =Sub Navigation
+  ----------------------------------------------- */
+  nav.sub ul,
+  nav.sub ul > li {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  nav.sub ul > li {
+    display: inline-block;
+  }
