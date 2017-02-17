@@ -932,10 +932,23 @@ Learn more [about our school](/about)
 
 
 <div class="summaries">
-  <div class="parents-summary text" markdown="1">
-## Parents & students
 
-Learn about attendance, handbooks, dress code and more on the [parents & students](/parents/) page.
+  <div class="parents-summary text">
+
+    <h2>Parents &amp; Students</h2>
+
+    <p>Learn about attendance, handbooks, dress code and more on the <span class="avoid-break" markdown="1"><a href="/parents/">Parents &amp; Students</a> page</span>.</p>
+
+    <ul>
+      <li><a href="/academics/">Courses</a></li>
+      <li><a href="/parents/#attendance">Attendance</a></li>
+      <li><a href="/parents/#dress-code">Dress Code</a></li>
+      <li><a href="/parents/#graduation-requirements">Graduation Requirements</a></li>
+      <li><a href="/schedule/">Bell Schedule</a></li>
+      <li><a href="/calendar/">Calendar</a></li>
+      <li><a href="/calendar/#tutoring">Tutoring</a></li>
+      <li><a href="/life/">Student Life</a></li>
+    </ul>
   </div>
 
   <div class="calendar-summary text" markdown="1">

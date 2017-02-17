@@ -26,10 +26,6 @@ Sierra High School is an alternative education program that provides a personali
 * [Uniform Complaint Procedures](http://www.gamutonline.net/district/azusa/displayPolicy/491099/index.html)
 * [WASC Self-Study](http://shs-ausd-ca.schoolloop.com/file/1301752510678/685205264068010517.pdf)
 
-## Activities
-
-Sierra High offers several activities for students to enhance their skills. The Leadership Class is responsible for assisting student advisors in setting up school activities. Applications may be turned in to the advisors in early September. The Yearbook Class prepares the annual yearbook for the school.
-
 ## Attendance
 
 Sierra students are required to be on time daily, and to remain for the full day. Since most students are behind in credits, regular attendance becomes very important in order to make up lost credits. Illness, medical appointments and the funeral of an immediate family member are the only reasons for excused absence.

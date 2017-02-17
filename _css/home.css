@@ -45,10 +45,20 @@
   .summaries .parents-summary a {
     color: inherit;
   }
-  .summaries div h2,
-  .parents-summary h2,
-  .news-summary-home h2 {
+  .summaries h2 {
     margin: 0;
+  }
+  .staff-list ul + p:last-child {
+    text-align: right;
+    max-width: none;
+  }
+  .summaries h2,
+  .summaries ul,
+  .summaries dl,
+  .summaries p {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   .news-summary-more {
     background: black;

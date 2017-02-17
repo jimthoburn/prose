@@ -313,14 +313,14 @@
     }
   }
 
-  .announcements ul,
-  .announcements li {
+  .announcements > ul,
+  .announcements > ul > li {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
   }
 
-  .announcements ul {
+  .announcements > ul {
     max-width: none;
     margin: 0;
   }
@@ -331,7 +331,7 @@
     padding-right: 1.5em;
   }
 
-  .announcements li {
+  .announcements > ul > li {
     padding: 1.5em;
   }
 
@@ -340,7 +340,7 @@
     padding-left: 3em;
     padding-right: 3em;
     }
-    .announcements li {
+    .announcements > ul > li {
       padding: 3em;
     }
   }
@@ -353,25 +353,35 @@
     margin: 0;
   }
 
-  .announcements li:first-child {
+  .announcements h2,
+  .announcements h3,
+  .announcements h4,
+  .announcements p,
+  .announcements li ul {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .announcements > ul > li:first-child {
     border-width: 0;
   }
 
   /*
-  .announcements li:nth-child(2n) {
+  .announcements > ul > li:nth-child(2n) {
     background-color: rgba(0, 0, 0, 0.025);
   }
 
-  .announcements li:nth-child(3n) {
+  .announcements > ul > li:nth-child(3n) {
     background-color: rgba(0, 0, 0, 0.05);
   }
   */
 
-  .announcements li h3 {
+  .announcements > ul > li h3 {
     margin-top: 0;
   }
 
-  .announcements li p:last-child {
+  .announcements > ul > li p:last-child {
     margin-bottom: 0;
   }
 
@@ -1175,10 +1185,22 @@
     color: inherit;
   }
 
-  .summaries div h2,
-  .parents-summary h2,
-  .news-summary-home h2 {
+  .summaries h2 {
     margin: 0;
+  }
+
+  .staff-list ul + p:last-child {
+    text-align: right;
+    max-width: none;
+  }
+
+  .summaries h2,
+  .summaries ul,
+  .summaries dl,
+  .summaries p {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .news-summary-more {

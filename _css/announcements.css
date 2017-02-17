@@ -15,13 +15,13 @@
       margin-right: -3em;
     }
   }
-  .announcements ul,
-  .announcements li {
+  .announcements > ul,
+  .announcements > ul > li {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
   }
-  .announcements ul {
+  .announcements > ul {
     max-width: none;
     margin: 0;
   }
@@ -30,7 +30,7 @@
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
-  .announcements li {
+  .announcements > ul > li {
     padding: 1.5em;
   }
   @media (min-width: 60em) { /* --big-screen-width */
@@ -38,7 +38,7 @@
     padding-left: 3em;
     padding-right: 3em;
     }
-    .announcements li {
+    .announcements > ul > li {
       padding: 3em;
     }
   }
@@ -48,25 +48,34 @@
   .announcements h2 {
     margin: 0;
   }
+  .announcements h2,
+  .announcements h3,
+  .announcements h4,
+  .announcements p,
+  .announcements li ul {
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-  .announcements li:first-child {
+  .announcements > ul > li:first-child {
     border-width: 0;
   }
 
   /*
-  .announcements li:nth-child(2n) {
+  .announcements > ul > li:nth-child(2n) {
     background-color: rgba(0, 0, 0, 0.025);
   }
 
-  .announcements li:nth-child(3n) {
+  .announcements > ul > li:nth-child(3n) {
     background-color: rgba(0, 0, 0, 0.05);
   }
   */
 
-  .announcements li h3 {
+  .announcements > ul > li h3 {
     margin-top: 0;
   }
-  .announcements li p:last-child {
+  .announcements > ul > li p:last-child {
     margin-bottom: 0;
   }
 
