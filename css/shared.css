@@ -186,6 +186,31 @@
     height: auto;
   }
 
+  /* =Icons
+  ----------------------------------------------- */
+
+  h3 img[src*="svg"] {
+    vertical-align: middle;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  @media (min-width: 60em) {
+    h3 img[src*="svg"] {
+      position: absolute;
+      margin-left: -2em;
+    }
+  }
+
+  li img[src*="svg"],
+  dt img[src*="svg"] {
+    vertical-align: middle;
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.5em;
+    margin-left: -1.5em;
+  }
+
   /* =Calendar
   ----------------------------------------------- */
 
@@ -858,6 +883,18 @@
 
   body > nav {
     text-align: center;
+  }
+
+  body > nav h1 {
+    font-size: inherit;
+    text-align: center;
+    margin-bottom: 2.25em;
+    max-width: none;
+  }
+
+  body > nav h1 img {
+    width: 12em;
+    height: auto;
   }
 
   body > nav h2 {
@@ -1688,11 +1725,13 @@
 
   /* SHIM: Prevent horizontal scrollbars */
 
+  /*
   html, body {
     width: 100%;
     overflow-x: hidden;
     overflow-y: visible;
   }
+  */
 
   /*
   body > main {
