@@ -156,22 +156,34 @@ body > main > div:first-of-type a {
   color: inherit;
 }
 
-body > main > div:first-of-type::before,
-body > main > div:first-of-type::after {
-  content: "";
+body > main > div:first-of-type .decoration {
+  display: block;
   position: absolute;
   z-index: -1;
+  top: 0;
+  left: 0;
+  height: 35vh;
+  min-height: 20vmax;
+  width: 17.5vh;
+  min-width: 10vmax;
+  overflow: hidden;
+  transform: translateY(-65%);
+}
+body > main > div:first-of-type .decoration::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 70vh;
   min-height: 40vmax;
   width: 70vh;
   min-width: 40vmax;
-  top: 0;
-  left: 0;
   background: rgb(32, 85, 135); /* --dark-ocean */
   /*
   border: 0.25em solid white;
   */
-  transform: translate(-110%, -65%) rotate(-45deg);
+  transform: translate(-110%, -25%) rotate(-45deg);
   box-shadow:
     0.25em 0.25em 0 rgb(46, 127, 182), /* --ocean */
     0.75em 0.75em 0 rgb(32, 85, 135), /* --dark-ocean */
@@ -179,17 +191,45 @@ body > main > div:first-of-type::after {
     1.75em 1.75em 0 rgb(32, 85, 135), /* --dark-ocean */
     2.25em 2.25em 0 rgb(46, 127, 182); /* --ocean */
 }
-body.image-reverse  > main > div:first-of-type::before {
-  transform: translate(110%, -65%) rotate(-225deg);
+body.image-reverse > main > div:first-of-type .decoration {
   left: auto;
   right: 0;
 }
-body > main > div:first-of-type::after {
-  display: none;
-  transform: translate(90%, -35%) rotate(-225deg);
+body.image-reverse > main > div:first-of-type .decoration::before {
+  transform: translate(110%, -25%) rotate(-225deg);
   left: auto;
   right: 0;
 }
+
+@media (false) {
+  body > main > div:first-of-type::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 70vh;
+    min-height: 40vmax;
+    width: 70vh;
+    min-width: 40vmax;
+    top: 0;
+    left: 0;
+    background: rgb(32, 85, 135); /* --dark-ocean */
+    /*
+    border: 0.25em solid white;
+    */
+    transform: translate(-110%, -65%) rotate(-45deg);
+    box-shadow:
+      0.25em 0.25em 0 rgb(46, 127, 182), /* --ocean */
+      0.75em 0.75em 0 rgb(32, 85, 135), /* --dark-ocean */
+      1.25em 1.25em 0 white,
+      1.75em 1.75em 0 rgb(32, 85, 135), /* --dark-ocean */
+      2.25em 2.25em 0 rgb(46, 127, 182); /* --ocean */
+
+    transform: translate(90%, -35%) rotate(-225deg);
+    left: auto;
+    right: 0;
+  }
+}
+
 
 body > main > div:first-of-type > * {
 }
@@ -895,12 +935,13 @@ body {
 
 # Bringing<br />aspiration<br /><span class="avoid-break"><span class="lowercase">into</span> reality</span>
 
-<div markdown="1">
+<div>
 
-Our mission is to provide a personalized, enriched, and varied environment that enables students to develop to their full potential.
+<p>Our mission is to provide a personalized, enriched, and varied environment that enables students to develop to their full potential.</p>
 
-Learn more [about our school](/about)
+<p>Learn more <a href="/about">about our school</a></p>
 
+<span class="decoration"></span>
 </div>
 
 <div class="staff-list">
