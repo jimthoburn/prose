@@ -84,6 +84,7 @@
     font-weight: inherit;
   }
 
+  /*
   h1,
   body > header h2,
   body > nav    h2,
@@ -105,6 +106,13 @@
     font-weight: 400;
     font-style: italic;
     font-family: "Roboto", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+  }
+  */
+
+  h1 .lowercase {
+    font-style: italic;
+    font-weight: normal;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
   }
 
   .avoid-break {
@@ -635,7 +643,6 @@
 
   body > header h2 {
     font-size: inherit;
-    font-weight: 400;
     margin-right: 1.5em;
     margin: 0;
   }
@@ -900,7 +907,6 @@
   body > nav h2 {
     font-size: inherit;
     max-width: none;
-    font-weight: 400;
   }
 
   body > nav > ul {
@@ -964,7 +970,6 @@
   body > footer h2 {
     margin-top: 0;
     font-size: inherit;
-    font-weight: inherit;
     line-height: inherit;
     margin-bottom: 0;
   }
@@ -1797,6 +1802,24 @@
       1.25em 1.25em 0 white,
       1.75em 1.75em 0 rgb(32, 85, 135),
       2.25em 2.25em 0 rgb(46, 127, 182);
+  }
+
+  /* Override styles in type.css */
+
+  body {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-family: Merriweather, "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+  }
+
+  body > header h2 + p {
+    font-family: Merriweather, "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 0.75em;
+    line-height: 2em;
+    margin: 0;
   }
 
 /*# sourceMappingURL=shared.css.map */

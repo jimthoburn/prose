@@ -53,6 +53,7 @@
     font-weight: inherit;
   }
 
+  /*
   h1,
   body > header h2,
   body > nav    h2,
@@ -74,6 +75,12 @@
     font-weight: 400;
     font-style: italic;
     font-family: "Roboto", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+  }
+  */
+  h1 .lowercase {
+    font-style: italic;
+    font-weight: normal;
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
   }
   .avoid-break {
     display: inline-block;

@@ -126,3 +126,19 @@
       1.75em 1.75em 0 var(--dark-ocean),
       2.25em 2.25em 0 var(--ocean);
   }
+
+
+  /* Override styles in type.css */
+  body {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-family: Merriweather, "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+  }
+  body > header h2 + p {
+    font-family: Merriweather, "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 0.75em;
+    line-height: calc(var(--line-height) / 0.75em);
+    margin: 0;
+  }
