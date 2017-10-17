@@ -1,5 +1,6 @@
 ---
 title: Staff at Sierra High School
+position: 4
 layout: default
 has_wide_content: true
 ---

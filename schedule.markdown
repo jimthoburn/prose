@@ -1,5 +1,6 @@
 ---
 title: Bell Schedule at Sierra High School
+position: 9
 layout: default
 ---
 

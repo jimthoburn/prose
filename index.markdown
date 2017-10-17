@@ -1,5 +1,6 @@
 ---
 title: Sierra High School, Bringing aspiration into reality
+position: 2
 has_wide_content: true
 image: "/images/students/img_0325.jpg"
 image_focus: bottom

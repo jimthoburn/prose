@@ -1,5 +1,6 @@
 ---
 title: Student Life at Sierra High School
+position: 3
 layout: default
 image: "/images/photos/basketball.jpg"
 ---

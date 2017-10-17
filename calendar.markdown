@@ -1,5 +1,6 @@
 ---
 title: Calendar at Sierra High School
+position: 8
 layout: default
 ---
 

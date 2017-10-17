@@ -1,5 +1,6 @@
 ---
 title: Support and Wellness Programs at Sierra High School
+position: 5
 image: "/images/photos/lunch.jpg"
 layout: default
 ---

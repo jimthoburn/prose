@@ -1,5 +1,6 @@
 ---
 title: About Sierra High School
+position: 0
 image: "/images/photos/classroom-2.jpg"
 layout: default
 ---

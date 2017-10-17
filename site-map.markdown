@@ -1,5 +1,6 @@
 ---
 title: Website Prototype, Sierra High School
+position: 10
 layout: site-map
 ---
 

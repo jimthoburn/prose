@@ -1,5 +1,6 @@
 ---
 title: Parents & Students at Sierra High School
+position: 6
 image: "/images/photos/caligraphy.jpg"
 layout: default
 ---

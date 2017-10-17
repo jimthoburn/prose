@@ -1,5 +1,6 @@
 ---
 title: Academics at Sierra High School
+position: 1
 layout: default
 image: "/images/photos/academics.jpg"
 ---
